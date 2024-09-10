@@ -1,0 +1,1876 @@
+                                                                                                                                        
+
+<!Materias html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,
+    initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="style/style_tecnologia.css">
+    <link rel="icon" href="bio.png" type="image/x-icon">
+    <style>
+        
+        table{
+            width: 80%;
+            margin: 0 auto;
+            padding: 30px;
+            
+            position: center;
+            padding-left: 100px;
+            padding-right: 60px;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            flex: 1 1 300px;
+            }
+
+            tr{
+                padding: 0;
+                height: auto;
+                vertical-align: middle;
+            }
+
+            @media (max-width: 768px) {
+    table {
+        width: 100%;
+        padding: 10px;
+    }
+
+    td, th {
+        width: 50%;
+        height: 50px;
+    }
+
+    img {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .menu-lateral {
+        width: 100%;
+        margin-top: 10px;
+        order: 2;
+    }
+
+    .preguntas-respuestas {
+        flex-direction: column;
+    }
+
+    .menu-contenido {
+        flex-direction: column;
+    }
+
+    .contenido {
+        width: 100%;
+        margin-right: 0;
+    }
+}
+
+.cuadrado-morado:hover, .cuadrado-azul:hover, .cuadrado-rosa:hover, .cuadrado-verde:hover,
+.cuadrado-amarillo:hover, .cuadrado-naranja:hover, .cuadrado-gris:hover, .cuadrado-estadia:hover {
+    transform: scale(1.5);
+    z-index: 10;
+}
+
+@media (max-width: 768px) {
+    .cuadrado-morado, .cuadrado-azul, .cuadrado-rosa, .cuadrado-verde,
+    .cuadrado-amarillo, .cuadrado-naranja,.cuadrado-esadia{
+        transform: scale(1.2);
+    }
+}
+
+
+        
+
+        
+
+        img{
+            width: 30px;
+            height: 30px;
+        }
+            .cuadrado-morado:hover, .cuadrado-azul:hover, .cuadrado-rosa:hover, .cuadrado-verde:hover,
+            .cuadrado-amarillo:hover, .cuadrado-naranja:hover {
+                transform: scale(1.5);
+                z-index:10;
+            }
+
+
+            @media (min-width:768%) and (max-width: 1023px) {
+        td,th {
+            width: 30%;
+            height: 30px;
+        }
+
+        table{
+            width: 100%;
+            padding: 10px;
+        }
+
+        .cuadrado-morado, .cuadrado-azul, .cuadrado-rosa, .cuadrado-verde,
+            .cuadrado-amarillo, .cuadrado-naranja {
+                transform: scale(1.2);
+
+            }
+
+
+
+            preguntas-respuestas{
+    display: flex;
+    width: 100%;
+                    }
+
+                    .menu-contenido{
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+}
+.menu-contenido, contenido{
+    height: auto;
+}
+.menu-lateral{
+    width: 20%;
+    background-color: rgba(3, 243, 252, 0);
+    padding: 10px;
+    box-shadow: 0px 0 0px rgba(12, 229, 245, 0.1);
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+
+}
+
+    }
+
+
+        td, th {
+            overflow: hidden;
+            width: 10px;
+            height: 10px;
+            border: 2px solid rgb(252, 252, 252);
+            text-align: center;    
+
+            @media (max-width: 1226px) {
+      td, th{
+         display: inline-block !important;
+      }
+      }
+        }
+
+    
+        
+
+        .img-informacion{
+            position: absolute;
+            bottom: 5px;
+            right: 5px;
+            width: 100px !important;
+            height: 100px !important;
+        }
+
+        
+        
+
+        /*En este aprtado se definen las clases asi como sus estilos para los Cuadrados
+        de la tabla, colores, mrgen etc.*/
+
+        .letra::before{
+            content: attr(data-letter);
+            text-align: right;
+            top: 5px;
+            right: 5px;
+            font-size: 10px;
+            padding: 2px 5px;
+            border-radius: 3px;
+            position: absolute;
+            font-size: 25px;
+            color: aliceblue;
+            font-weight: bold;
+        }
+
+        .cuadrado-morado{
+
+            background-color: #ac99c9;
+            position: relative;
+            transition: transform 0.1s ease, z-index 0s 0.1s;
+           z-index: 1;
+           overflow: hidden;
+           box-sizing: border-box;
+           padding: 10px;
+          
+        }
+        .cuadrado-morado:hover{
+            transform: scale(1.5);
+            z-index: 10;
+        }
+
+        .cuadrado-azul{
+            background-color: #9bbbe3;
+            position: relative;
+            transition: transform 0.1s ease, z-index 0s 0.1s;
+           z-index: 1;
+           overflow: hidden;
+           box-sizing: border-box;
+           padding: 10px;
+           
+        }
+        .cuadrado-azul:hover{
+            transform: scale(1.5);
+            z-index: 10;
+        }
+        .cuadrado-naranja{
+            background-color: #ecba94 ; /*Es la primer fila de lado derecho*/
+            position: relative;
+            transition: transform 0.1s ease, z-index 0s 0.1s;
+           z-index: 1;
+           overflow: hidden;
+           box-sizing: border-box;
+           padding: 10px;
+        }
+        .cuadrado-naranja:hover{
+            transform: scale(1.5);
+            z-index: 10;
+        }
+            
+        .cuadrado-amarillo{
+            position: relative;
+            background-color: #ebd28d ;
+            transition: transform 0.1s ease, z-index 0s 0.1s;
+           z-index: 1;
+           overflow: hidden;
+           box-sizing: border-box;
+           padding: 10px;
+        }
+        .cuadrado-amarillo:hover{
+            transform: scale(1.5);
+            z-index: 10;
+        }
+        
+        
+        .cuadrado-verde{
+            background-color: #aecf94;
+            position: relative;
+            transition: transform 0.1s ease, z-index 0s 0.1s;
+           z-index: 1;
+           overflow: hidden;
+           box-sizing: border-box;
+           padding: 10px;
+        }
+        .cuadrado-verde:hover{
+            transform: scale(1.5);
+            z-index: 10;
+        }
+        .cuadrado-rosa{
+            background-color: #f7acba;
+            position: relative;
+            transition: transform 0.1s ease, z-index 0s 0.1s;
+           z-index: 1;
+           overflow: hidden;
+           box-sizing: border-box;
+            padding: 10px;
+            margin-top: -20px;
+
+           @media (max-width: 1226px) {
+      .cuadrado-rosa{
+         display: inline-block !important;
+      }
+        }
+
+        }
+        .cuadrado-rosa:hover{
+            transform: scale(1.5);
+            z-index: 10;
+        }
+        .cuadrado-gris{
+            background-color: #ccc7c7;
+            position: relative;
+            transition: transform 0.1s ease, z-index 0s 0.1s;
+           z-index: 1;
+           overflow: hidden;
+           box-sizing: border-box;
+           padding: 10px;
+        }
+        .cuadrado-gris:hover{
+            transform: scale(1.5);
+            z-index: 10;
+        }
+        
+
+
+        
+            /*---------Este apartado es para los botones que se agreguen-------*/
+        button{
+            border: 0;
+            background-image: linear-gradient(
+                150deg,
+                #770808,
+                rgb(166, 89, 89),
+                #f65757
+            );
+            border-radius: 8px;
+            color: #fff;
+            display: flex;
+            padding: 15px;
+            cursor: pointer;
+            transition: .3s;
+        }
+        button:hover span {
+            background: none;
+        }
+
+        button:active {
+            transform: scale(0.9);
+        }
+
+        .qr-unadm{
+      display: block;
+      margin-top: 25px;
+      margin-bottom: 10px;
+   }
+  .exp{
+    position: relative;
+  }
+        
+  .caja{
+    background-image: url('map.png');
+    background-size:contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: auto;
+    border-bottom: 25px;
+   border-top: 70px !important;
+   border-radius: 20px;
+   border-width: 90px;
+   border-left: 50px;
+
+   
+   }  
+   
+   
+
+    </style>
+</head>
+<body>
+
+   <center>
+
+   <div class="tabla-contenedor" >
+    <div class="titulog" id="titulo_carrera"><h1>Asignaturas de la carrera de<br>desarrollo y gestión de software</h1></div>
+    <table border="0">
+        <div class="columna-1">
+        <tr><!-- primela fila-->
+            <td class="cuadrado-morado"><div class="letra" data-letter="I"></div>
+                <div class="circle-morado" >
+                <a href="PDF/cuatrimestre-1/algebra_lineal.pdf  "><img src="iconos/algebra.png" alt="Icono" width="70px" height="90"></a>
+            </div> 
+                <a class="morado" href="#mostrar"><h4>Algebra<br>Lineal</h4></a></td>
+            <td colspan="12" class="caja">
+                
+            </td>
+            <td class="cuadrado-amarillo">
+                <div class="letra" data-letter="I"></div>
+                 <div class="circle-amarillo">
+            <a href="PDF/cuatrimestre-1/formacion_sociocultural.pdf"><img src="iconos/formacion-socioculural.png" alt="Icono" width="70px" height="70"></a>
+            </div> 
+            <a class="amarillo" href="#sociocultural-1"><h4>Sociocultural I</td></h4></a>
+        </tr>
+        </div>
+
+        <tr><!--segunda fila-->
+            <td class="cuadrado-morado">
+                <div class="circle-morado" >
+                    <a href="PDF/cuatrimestre-1/pensamiento_logico.pdf"><img src="iconos/pensamientolog.png" alt="Icono" width="70px" height="70"></a>
+                </div>
+            <div class="letra" data-letter="I"></div> <!--Se agrega la letra del numero de Cuatrimestre-->
+            <a class="morado" href="#pensamiento"><h4>Pensamiento lógico</h4></a></td>
+            
+            <td class="cuadrado-azul">
+                <div class="letra" data-letter="I"></div>
+                <div class="circle-azul" >
+                <a href="PDF/cuatrimestre-1/Fundamentos_redes.pdf"><img src="iconos/fundamentosderedes.png" alt="Icono" width="70px" height="70"></a></div>
+            <a class="azul" href="#fredes"><h4>Fundamentos Redes</td></h4></a>
+
+            
+            
+            <td class="cuadrado-azul">
+                <div class="letra" data-letter="II"></div>
+                <div class="circle-azul" >
+                <a href="PDF/cuatrimestre-2/introduccion_diseño.pdf"><img src="iconos/introduccion-diseñoD.png" alt="Icono" width="70px" height="70"></a>
+            </div>
+                <a class="azul" href="#diseño_digital"><h4>Diseño digital</h4></td></a>
+                </td>
+            
+                    <td class="cuadrado-azul"><div class="letra" data-letter="III"></div>
+                        <br>
+                        <div class="circle-azul">
+                <a href="PDF/cuatrimestre-3/base_datos_aplicaciones.pdf"><img src="iconos/base-de-datos-aplicaciones.png" alt="Icono" width="70px" height="70"></a>
+            </div>
+                <a class="azul" href="#base_datos"><h4>BD para aplicaciones</td></h4></a>
+
+            <td colspan="6" >
+                <div class="exp">
+                    <img src="tics_clean.png"  style="width: 350px; height: 200px;">
+                </div>
+            </td>
+            
+            <td class="cuadrado-naranja"><div class="letra" data-letter="V"></div>
+                <div class="circle-naranja" >
+                <a href="PDF/cuatrimestre-5/InglesV.pdf"><img src="iconos/ingles.png" alt="Icono" width="70px" height="70"></a>
+            </div> 
+                <a class="naranja" href="#ingles_5"><h4>Ingles V</h4></a>
+                
+                <td class="cuadrado-rosa"><div class="letra" data-letter="VII"></div>
+                    <div class="circle-rosa" >
+                    <a href="PDF/cuatrimestre-7/Administracion_del_tiempo.pdf"><img src="iconos/adminisracion-tiempo.png" alt="Icono" width="70px" height="70"></a>
+                </div> 
+                   <a class="rosa" href="#adm_tiempo"><h4>Administracion<br>del tiempo</td></h4></a>
+            
+                <td class="cuadrado-rosa"><div class="letra" data-letter="VIII"></div>
+                    <div class="circle-rosa" >
+                <a href="PDF/cuatrimestre-8/6 Planeacion_y_organizacion_del_trabajo.pdf"><img src="iconos/organizaccion-tiempo.png" alt="Icono" width="70px" height="70"></a>
+            </div>
+                <a class="rosa" href="#org_trabajo"><h4>Organización del trabajo</td></h4></a>
+            
+                <td class="cuadrado-amarillo"><div class="letra" data-letter="II"></div>
+                    <div class="circle-amarillo">
+                <a href="PDF/cuatrimestre-2/formacion_sociocultural.pdf"><img src="iconos/formacion-socioculural.png" alt="Icono" width="70px" height="70"></a>
+            </div> 
+                <a class="amarillo" href="#sociocultural_2"><h4>Sociocultural II</td></h4></a>
+            
+            
+            
+        </tr>
+        <tr><!--tercera fila-->
+            <td class="cuadrado-morado"><div class="letra" data-letter="II"></div>
+                
+                <div class="circle-morado">
+                    <a href="PDF/cuatrimestre-2/funciones_matemaicas.pdf"><img src="iconos/funcionesmmpng.png" alt="Icono" width="70px" height="70"> </a>
+                </div>
+                    <a class="morado" href="#funciones"><h4>Funciones<br>Matematicas</h4></a>
+
+            <td class="cuadrado-azul"><div class="letra" data-letter="I"></div>
+                <br>
+                <div class="circle-azul">
+                <a href="PDF/cuatrimestre-1/metodologia_programacion.pdf"><img src="iconos/metodologia-programacion.png" alt="Icono" width="70px" height="70"></a>
+            </div>
+                <a class="azul" href="#metodologia_programacion"><h4>Metodología<br>programación</td></h4></a>
+
+            <!--<td colspan="10"></td> Este se coloca despues del
+        cuadrado o de la figura en la que se desea dejar espacio, en este caso de caca uno de los cuadrados--> 
+
+            <td class="cuadrado-azul"><div class="letra" data-letter="II"></div>
+                <br>
+                 <div class="circle-azul" >
+                <a href="PDF/cuatrimestre-2/base_datos.pdf"><img src="iconos/badededatos.png" alt="Icono" width="70px" height="70"></a>
+            </div>
+                <a class="azul" href="#base_datos_1"><h4>Base de datos</td></h4></a>
+
+            <td class="cuadrado-azul"><div class="letra" data-letter="IV"></div>
+            <br>
+                 <div class="circle-azul" >
+                <a href="PDF/cuatrimestre-4/EstandaresMetricasDesarrolloSoftware.pdf"><img src="iconos/metricas-software.png" alt="Icono" width="70px" height="70"></a>
+            </div>
+                <a class="azul" href="#estandares"><h4>Estandares  de Software</td></h4></a>
+            
+                <td class="cuadrado-azul"><div class="letra" data-letter="IV"></div>
+                    <div class="circle-azul" >
+                <a href="PDF/cuatrimestre-4/EstandaresMetricasDesarrolloSoftware.pdf"><img src="iconos/aplicaciones-servicios.png" alt="Icono" width="70px" height="70"></a>
+            </div>
+                <a class="azul" href="#servicios"><h4>Apps web en servicios</td></h4></a>
+            
+                <td class="cuadrado-azul"><div class="letra" data-letter="V"></div>
+                    <div class="circle-azul" >
+                <a href="PDF/cuatrimestre-5/IntegradoraII.pdf"><img src="iconos/inegradora-II.png  " alt="Icono" width="70px" height="70"></a>
+            </div>
+                <a class="azul" href="#integradora_2"><h4>Integradora II</td></h4></a>
+            
+                <td class="cuadrado-azul"><div class="letra" data-letter="VII"></div>
+                    <div class="circle-azul" >
+                <a href="PDF/cuatrimestre-7/Arquitecturas_de_software.pdf"><img src="iconos/arquitectura-de-software.png" alt="Icono" width="70px" height="70"></a>
+            </div>
+                <a class="azul" href="#arquitectura"><h4>Arquitectura de Sofware</td></h4></a>
+            
+                <td class="cuadrado-azul"><div class="letra" data-letter="VIII"></div>
+                    <div class="circle-azul" >
+                <a href="PDF/cuatrimestre-8/3 Desarrollo_Web_Profesional.pdf"><img src="iconos/web-profesional.png" alt="Icono" width="70px" height="70"></a>
+            </div>
+               <a class="azul" href="#profesional"><h4>Web<br>profesional</td></h4></a>
+            
+                <td class="cuadrado-azul"><div class="letra" data-letter="X"></div>
+                    <div class="circle-azul" >
+                <a href="PDF/cuatrimestre-10/4_Desarrollo_Movil_Integral.pdf"><img src="iconos/desarrollo-web-integral.png" alt="Icono" width="70px" height="70"></a>
+            </div>
+                <a class="azul" href="#integral"><h4>Des. móvil integral</td></h4></a>
+            
+                <td class="cuadrado-naranja"><div class="letra" data-letter="I"></div>
+                    <div class="circle-naranja" >
+                <a href="PDF/cuatrimestre-1/expresion_oral_escrita.pdf"><img src="iconos/expresion-exscrita.png" alt="Icono" width="70px" height="70"></a>
+            </div>
+                <a class="naranja" href="#expresion_1"><h4>Expresión escrita I</h4></a>
+            
+                <td class="cuadrado-naranja"><div class="letra" data-letter="II"></div>
+                    <div class="circle-naranja" >
+                <a href="PDF/cuatrimestre-2/ingles_II.pdf"><img src="iconos/ingles.png" alt="Icono" width="70px" height="70"></a>
+            </div>
+               <a class="naranja" href="#ingles_2"><h4>Ingles II</h4></a>
+            
+                <td class="cuadrado-naranja"><div class="letra" data-letter="IV"></div>
+                    <div class="circle-naranja" >
+                <a href="PDF/cuatrimestre-4/InglesIV.pdf"><img src="iconos/ingles.png" alt="Icono" width="70px" height="70"></a>
+            </div>
+               <a class="naranja" href="#ingles_6"><h4>Ingles VI</h4></a> 
+            
+                <td class="cuadrado-rosa"><div class="letra" data-letter="IX"></div>
+                    <div class="circle-rosa" >
+                <a href="PDF/cuatrimestre-9/6 Dirección_de_equipos_de_alto_rendimiento.pdf"><img src="iconos/direccion-equipos.png" alt="Icono" width="70px" height="70"></a>
+            </div>
+                <a class="rosa" href="#rendimiento"><h4>Alto rendimiento</td></h4></a>
+                <td class="cuadrado-amarillo"><div class="letra" data-letter="III"></div>
+                    <div class="circle-amarillo">
+                <a href="PDF/cuatrimestre-3/formacion_sociocultural.pdf"><img src="iconos/formacion-socioculural.png" alt="Icono" width="70px" height="70"></a>
+            </div>
+                <a class="amarillo" href="#sociocultural_3"><h4>Socioculural III</td></h4></a>
+           
+        </tr>
+        <tr><!--cuarta fila-->
+            <td class="cuadrado-morado"><div class="letra" data-letter="III"></div>
+                <div class="circle-morado" >
+                <a href="PDF/cuatrimestre-3/calculo_diferencial.pdf"><img src="iconos/calculodif.png" alt="Icono" width="70px" height="70"></div></a>
+                <a class="morado" href="#calculo"><h4>Calculo diferencial</h4></a></td>
+
+            <td class="cuadrado-azul"><div class="letra" data-letter="II"></div>
+                <div class="circle-azul">
+                <a href="PDF/cuatrimestre-2/metodologia_modelado_software.pdf"><img src="iconos/metodologiaymodeladosoftware.png" alt="Icono" width="80px" height="80"></a>
+            </div>
+                <a class="azul" href="#modelado_software"><h4>Modelado de desarrollo software</td></h4></a>
+
+            <td class="cuadrado-azul"><div class="letra" data-letter="III"></div>
+                <div class="circle-azul">
+                <a href="PDF/cuatrimestre-3/sistemas_operativos.pdf"><img src="iconos/sisemas-operativos.png" alt="Icono" width="70px" height="70"></a>
+            </div>
+                <a class="azul" href="#operativos"><h4>Sistemas operativos</td></h4></a>
+
+            <td class="cuadrado-azul"><div class="letra" data-letter="IV"></div>
+                <div class="circle-azul">
+                <a href="PDF/cuatrimestre-4/PrincipiosIoT.pdf"><img src="iconos/principios-iot.png" alt="Icono" width="70px" height="70"></a>
+            </div>
+                <a class="azul" href="#principios_iot"><h4>Principios para IoT</td></h4></a>
+
+            <td class="cuadrado-azul"><div class="letra" data-letter="IV"></div>
+                <div class="circle-azul">
+                <a href="PDF/cuatrimestre-4/EvaluacionMejoraDesarrolloSoftware.pdf"><img src="iconos/evaluacion-software.png" alt="Icono" width="70px" height="70"></a>
+            </div>
+               <a class="azul" href="#evaluacion_software"><h4>Evaluacion y mejora para el desarrollo de software</td></h4></a>
+
+            <td class="cuadrado-azul"><div class="letra" data-letter="V"></div>
+                <div class="circle-azul">
+                <a href="PDF/cuatrimestre-5/AplicacionesWebI4.0.pdf"><img src="iconos/aplicaciones-i4.0.png" alt="Icono" width="70px" height="70"></a>
+            </div>
+                <a class="azul" href="#i4.0"><h4>Aplicaciones web para 14.0</td></h4></a>
+
+            <td class="cuadrado-azul"><div class="letra" data-letter="VII"></div>
+                <div class="circle-azul">
+                <a href="PDF/cuatrimestre-7/Experiencia_de_usuario.pdf"><img src="iconos/experiencia-usuario.png" alt="Icono" width="70px" height="70"></a>
+            </div>
+                <a class="azul" href="#e_usuario"><h4>Experiencia de usuario</td></h4></a>
+
+            <td class="cuadrado-azul"><div class="letra" data-letter="VIII"></div>
+                <div class="circle-azul">
+                <a href="PDF/cuatrimestre-8/4 Seguridad_en_el_desarrollo_de_aplicaciones.pdf"><img src="iconos/seguridad-desarrollo-aplicaciones.png" alt="Icono" width="70px" height="70"></a>
+            </div>
+               <a class="azul" href="#seg_aplicaciones"><h4>Seguridad en el desarrollo de aplicaciones</td></h4></a>
+
+            <td class="cuadrado-azul"><div class="letra" data-letter="IX"></div>
+                <div class="circle-azul">
+                <a href="PDF/cuatrimestre-9/4 Desarrollo_para_dispositivos_inteligentes.pdf"><img src="iconos/dispositivos-ineligentes.png" alt="Icono" width="70px" height="70"></a>
+            </div>
+               <a class="azul" href="#dis_inteligentes"><h4>Dispositivos inteligentes</td></h4></a>
+
+            <td class="cuadrado-naranja"><div class="letra" data-letter="I"></div>
+                <div class="circle-naranja">
+                <a href="PDF/cuatrimestre-1/ingles.pdf"><img src="iconos/ingles.png" alt="Icono" width="70px" height="70"></a>
+            </div>
+                <a class="naranja" href="#ingles_1"><h4>Ingles I</h4></a>
+
+            <td class="cuadrado-naranja"><div class="letra" data-letter="III"></div>
+                <div class="circle-naranja">
+                <a href="PDF/cuatrimestre-3/ingles.pdf"><img src="iconos/ingles.png" alt="Icono" width="70px" height="70"></a>
+            </div>
+                <a class="naranja" href="#ingles_3"><h4>Ingles III</h4></a>
+
+            <td class="cuadrado-naranja"><div class="letra" data-letter="VIII"></div>
+                <div class="circle-naranja">
+                <a href="PDF/cuatrimestre-7/InglesVI.pdf"><img src="iconos/ingles.png" alt="Icono" width="70px" height="70"></a>
+            </div>
+                <a class="naranja" href="#ingles_7"><h4>Ingles VII</h4></a> 
+
+            <td class="cuadrado-rosa"><div class="letra" data-letter="X"></div>
+                <div class="circle-rosa">
+                <a href="PDF/cuatrimestre-10/7_Negociacion-empresarial.pdf"><img src="iconos/negociacion-empresarial.png" alt="Icono" width="70px" height="70"></a>
+            </div>
+                <a class="rosa" href="#empresarial"><h4>Negociacion empresarial</td></h4></a>
+
+            <td class="cuadrado-amarillo"><div class="letra" data-letter="IV"></div>
+                <div class="circle-amarillo">
+                <a href="PDF/cuatrimestre-4/FormacionSociocultural_IV.pdf"><img src="iconos/formacion-socioculural.png" alt="Icono" width="70px" height="70"></a>
+            </div>
+                <a class="amarillo" href="#sociocultural_4"><h4>Formacion sociocultural IV</td></h4></a>
+          
+        </tr>
+       
+        <tr><!--quinta fila-->
+
+            <td class="cuadrado-morado"><div class="letra" data-letter="III"></div>
+                <div class="circle-morado" >
+                <a href="PDF/cuatrimestre-3/probabilidad_estadistica.pdf"><img src="iconos/probabilidad-estadistica.png" alt="Icono" width="70px" height="70"></a>
+            </div>
+                <a class="morado" href="#probabilidad"><h4>Probabilidad y Esadistica</td></h4></a>
+
+            <td class="cuadrado-azul"><div class="letra" data-letter="II"></div>
+                <div class="circle-azul">
+                <a href="PDF/cuatrimestre-2/intterconexion_redes.pdf"><img src="iconos/inerconexion-redes.png" alt="Icono" width="70px" height="70"></a>
+            </div>
+                <a class="azul" href="#interconexion"><h4>Interconexion de Redes</td></h4></a>
+
+            <td class="cuadrado-azul"><div class="letra" data-letter="III"></div>
+                <div class="circle-azul">
+                <a href="PDF/cuatrimestre-3/integradora.pdf"><img src="iconos/inegradora-II.png" alt="Icono" width="70px" height="70"></a>
+            </div>
+                <a class="azul" href="#integradora_1"><h4>Integradora I</td></h4></a>
+
+            <td class="cuadrado-azul"><div class="letra" data-letter="IV"></div>
+                <div class="circle-azul">
+                <a href="PDF/cuatrimestre-4/DisenoApps.pdf"><img src="iconos/diseño-apps.png" alt="Icono" width="70px" height="70"></a>
+            </div>
+                <a class="azul" href="#d_aps"><h4>Diseño de Apps</td></h4></a>
+
+            <td class="cuadrado-azul"><div class="letra" data-letter="V"></div>
+                <div class="circle-azul">
+                <a href="PDF/cuatrimestre-5/AplicacionesIoT.pdf"><img src="iconos/aplicaciones-iot.png" alt="Icono" width="70px" height="70"></a>
+            </div>
+                <a class="azul" href="#aps_iot"><h4>Aplicaciones de IoT</td></h4></a>
+
+            <td class="cuadrado-azul"><div class="letra" data-letter="V"></div>
+                <div class="circle-azul">
+                <a href="PDF/cuatrimestre-5/BasesDatosComputoNube.pdf"><img src="iconos/basededatos-nube.png" alt="Icono" width="70px" height="70"></a>
+            </div>
+                <a class="azul" href="#bd_nube"><h4>Bases de datos para computo en la nube</td></h4></a>
+
+            <td class="cuadrado-azul"><div class="letra" data-letter="VII"></div>
+                <div class="circle-azul">
+                <a href="PDF/cuatrimestre-7/Seguridad_Informatica.pdf"><img src="iconos/seguridad-informatica.png" alt="Icono" width="70px" height="70"></a>
+            </div>
+                <a class="azul" href="#seg_informatica"><h4>Seguridad informatica</td></h4></a>
+
+            <td class="cuadrado-azul"><div class="letra" data-letter="IX"></div>
+                <div class="circle-azul">
+                <a href="PDF/cuatrimestre-9/1 Administracion_de_proyectos_de_TI.pdf"><img src="iconos/proyectos-ti.png" alt="Icono" width="70px" height="70"></a>
+            </div>
+                <a class="azul" href="#adm_proyectos"><h4>Administracion de Proyectos de TI</td></h4></a>
+        
+            <td class="cuadrado-azul"><div class="letra" data-letter="X"></div>
+                <div class="circle-azul">
+                <a href="PDF/cuatrimestre-10/1_Gestion_del_proceso_de_desarrollo_de_Software.pdf"><img src="iconos/proceso-desarrollo-sofware.png" alt="Icono" width="70px" height="70"></a>
+            </div>
+                <a class="azul" href="#gestion_des_soft"><h4>Gestion del proceso de de desarrollo de software</h4></a>
+
+            <td class="cuadrado-azul"><div class="letra" data-letter="V"></div>
+                <div class="circle-azul">
+                <a href="PDF/cuatrimestre-5/IntegradoraII.pdf"><img src="iconos/inegradora-II.png" alt="Icono" width="70px" height="70"></a>
+            </div>
+                <a class="azul" href="#integradora_2"><h4>Integradora II</h4></a>
+
+            <td class="cuadrado-naranja"><div class="letra" data-letter="IV"></div>
+                <div class="circle-naranja">
+                <a href="PDF/cuatrimestre-4/InglesIV.pdf"><img src="iconos/ingles.png" alt="Icono" width="70px" height="70"></a>
+            </div>
+                <a class="naranja" href="#ingles_4"><h4>Ingles IV</h4></a>
+
+            <td class="cuadrado-naranja"><div class="letra" data-letter="IX"></div>
+                <div class="circle-naranja">
+                <a href="PDF/cuatrimestre-9/5 Inglés VIII.pdf"><img src="iconos/ingles.png" alt="Icono" width="70px" height="70"></a>
+            </div>
+                <a class="naranja" href="#ingles_8"><h4>Ingles VIII</h4> </a>
+
+            <td class="cuadrado-verde"><div class="letra" data-letter="VII"></div>
+                <div class="circle-verde">
+                <a href="PDF/cuatrimestre-7/Matematicas_para_ingeniaria1.pdf"><img src="iconos/matemaicas-ingenieria.png" alt="Icono" width="70px" height="70"></a>
+            </div>
+                <a class="verde" href="#mate_inge1"><h4>Matematicas para ingenieria I</td></h4></a>
+
+            <td class="cuadrado-gris"><div class="letra" data-letter="X"></div>
+                <div class="circle-gris">
+                <a href="PDF/cuatrimestre-10/5_Optativa_Creacion-de-videojuegos.pdf"><img src="iconos/videojuegos.png" alt="Icono" width="70px" height="70"></a>
+            </div>
+                <a class="gris" href="#videojuegos"><h4>Creacion de videojuegos</td></h4></a>
+        </tr>
+        <tr><!--sexta fila-->
+            <td class="cuadrado-azul"><div class="letra" data-letter="I"></div>
+                <div class="circle-azul">
+                <a href="PDF/cuatrimestre-1/fundamentos_ti.pdf"><img src="iconos/fundamenos-ti.png" alt="Icono" width="70px" height="70"></a>
+            </div>
+                <a class="azul" href="#fundametos_ti"><h4>Fundamentos de TI</td></h4></a>
+
+            <td class="cuadrado-azul"><div class="letra" data-letter="II"></div>
+                <div class="circle-azul">
+               <a href="PDF/cuatrimestre-2/programacion_orientada_objetos.pdf"><img src="iconos/programacion-objetos.png" alt="Icono" width="70px" height="70"></a>
+            </div>
+                <a class="azul" href="#orientada_objetos"><h4>Programacion orientada a objetos</td></h4></a>
+
+            <td class="cuadrado-azul"><div class="letra" data-letter="III"></div>
+                <div class="circle-azul" >
+                <a href="PDF/cuatrimestre-3/aplicaciones_web.pdf"><img src="iconos/aplicaciones-web.png" alt="Icono" width="70px" height="70"></a>
+            </div>
+                <a class="azul" href="#ap_web"><h4>Aplicaciones web</td></h4></a>
+
+            <td class="cuadrado-azul"><div class="letra" data-letter="IV"></div>
+                <div class="circle-azul">
+                <a href="PDF/cuatrimestre-4/EstructurasDatosAplicadas.pdf"><img src="iconos/estructura-datos.png" alt="Icono" width="70px" height="70"></a>
+            </div>
+                <a class="azul" href="#datos_aplicados"><h4>Estructura de datos aplicados</td></h4></a>
+
+            <td class="cuadrado-azul"><div class="letra" data-letter="V"></div>
+                <div class="circle-azul">
+                <a href="PDF/cuatrimestre-5/DesarrolloMovilMultiplataforma.pdf"><img src="iconos/desarrollo-movil.png" alt="Icono" width="70px" height="70"></a>
+            </div>
+                <a class="azul" href="#movil_multi"><h4>Desarrollo Movil multi-<br>plataforma</td></h4></a>
+
+            <td class="cuadrado-azul"><div class="letra" data-letter="VII"></div>
+                <div class="circle-azul">
+                <a href="PDF/cuatrimestre-7/Metodologias_para_e_ldesarrollo_de_proyectos.pdf"><img src="iconos/desarrollo-proyectos.png" alt="Icono" width="70px" height="70"></a>
+            </div>
+                <a class="azul" href="#desarr_proyectos"><h4>Metodología para el desarrollo de proyectos</td></h4></a>
+
+            <td class="cuadrado-azul"><div class="letra" data-letter="VIII"></div>
+                <div class="circle-azul">
+                <a href="PDF/cuatrimestre-8/2 Administracion_de_Base_de_Datos.pdf"><img src="iconos/administracion-base-datos.png" alt="Icono" width="70px" height="70"></a>
+            </div>
+                <a class="azul" href="#admin_bd"><h4>Administracion de bases de datos</td></h4></a>
+
+            <td class="cuadrado-azul"><div class="letra" data-letter="IX"></div>
+                <div class="circle-azul">
+                <a href="PDF/cuatrimestre-9/2 Extraccion_del_Conocimiento_en_Base_de_Datos.pdf"><img src="iconos/extraccion-base-datos.png" alt="Icono" width="70px" height="70"></a>
+            </div>
+                <a class="azul" href="#extraccion_bd"><h4>Extracción de conocimiento en base de datos</td></h4></a>
+
+            <td class="cuadrado-azul"><div class="letra" data-letter="X"></div>
+                <div class="circle-azul">
+                <a href="PDF/cuatrimestre-10/2_Aplicaciones_web_progresivas.pdf"><img src="iconos/progresivas.png" alt="Icono" width="70px" height="70"></a>
+            </div>
+                <a class="azul" href="#progresivas"><h4>Aplicaciones web progresivas</h4></a>
+
+            <td class="cuadrado-azul"><div class="letra" data-letter="X"></div>
+                <div class="circle-azul">
+                <a href="PDF/cuatrimestre-10/4_Desarrollo_Movil_Integral.pdf"><img src="iconos/movil-integral.png" alt="Icono" width="70px" height="70"></a>
+            </div>
+                <a class="azul" href="#movil_integral"><h4>Desarrollo movil integral</h4></a>
+
+            <td class="cuadrado-naranja"><div class="letra" data-letter="V"></div>
+                <div class="circle-naranja">
+                <a href="PDF/cuatrimestre-5/ExpresionOralEscritaII.pdf"><img src="iconos/expresion-exscrita.png" alt="Icono" width="70px" height="70"></a>
+            </div>
+                <a class="naranja" href="#expresion_2"><h4>Expresión oral y escrita II </h4></a>
+
+            <td class="cuadrado-naranja"><div class="letra" data-letter="X"></div>
+                <div class="circle-naranja">
+                <a href="PDF/cuatrimestre-10/6_Ingles-IX.pdf"><img src="iconos/ingles.png" alt="Icono" width="70px" height="70"></a>
+            </div>
+                <a class="naranja" href="#ingles_9"><h4>Ingles IX</h4></a>
+
+            <td class="cuadrado-verde"><div class="letra" data-letter="VIII"></div>
+                <div class="circle-verde">
+                <a href="PDF/cuatrimestre-8/1 Matematicas_para_Ingenieria_II.pdf"><img src="iconos/matemaicas-ingenieria.png" alt="Icono" width="70px" height="70"></a>
+            </div>
+                <a class="verde" href="#mate_inge2"><h4>Matematicas para ingenieria II</h4></td></a>
+
+                <td class="cuadrado-estadia"> <div class="letra" data-letter="XI"></div>
+                    <div class="circle-estadia">
+                    <img src="iconos/graduado.png" alt="Icono" width="70px" height="70">
+                </div>
+                <a class="estadia" href="#estadias"><h4>Estadías</h4></a>
+            
+        </tr>
+        
+        </tr>
+    </table> 
+
+   
+<br>
+
+<p class="frase" id="animated-text"></p>
+
+<!---Este modulo genera la informacion didactica.-->
+
+   <!--Algebra-->
+    <div  id="mostrar" class="contenido">
+        <h1>Información adicional</h1>
+        <h2>Álgebra Líneal</h2>
+        <a href="#titulo_carrera"><img src="animaciones/algebra.gif" class="imagen-lado-algebra"></a>
+        <h2 class="subtitulo">¿Qué es?</h2>
+        <p class="textop">Es la base matemática sobre la que se construyen los cimientos del desarrollo 
+            de software avanzado. En esta asignatura, los estudiantes aprenden a manejar matrices, vectores 
+            y transformaciones lineales, herramientas esenciales para modelar y resolver problemas complejos en múltiples dimensiones. </p>
+        <h2 class="subtitulo">¿Qué impacto tiene en la carrera?</h2>
+        <p class="textop">El impacto en la carrera de Desarrollo y Gestión de Software es inmenso, ya que 
+            estas técnicas se implementan en áreas como gráficos por computadora, inteligencia 
+            artificial y optimización de algoritmos, permitiendo a los desarrolladores crear soluciones más eficientes y poderosas.</p>
+            <h2 class="subtitulo">¿Cuál es su implementación?</h2>
+        <p class="textop">Para un futuro desarrollador de software, dominar Álgebra Lineal es abrir la puerta a
+             campos como la inteligencia artificial, donde las redes neuronales dependen de estas operaciones para aprender y tomar decisiones. </p>
+   
+        </div>
+        <!--Desarrollo de abilidades del pensamiento logico-->
+        
+        <div  id="pensamiento" class="flores recargar">
+            <h1>Información adicional</h1>
+            <h2>Habilidades del pensamiento lógico</h2>
+            <a href="#titulo_carrera"><img src="animaciones/pensamiento-logico.gif" class="imagen-lado-pensamiento"></a>
+            <h2 class="subtitulo">¿Qué es?</h2>
+            <p class="textop"> Es la brújula que guía a los desarrolladores a través del laberinto de problemas complejos, permitiéndoles encontrar soluciones claras y efectivas. En esta asignatura, los estudiantes afinan su capacidad para analizar 
+                situaciones, descomponer problemas y construir soluciones paso a paso, cualidades esenciales para cualquier programador. </p>
+            <h2 class="subtitulo">¿Qué impacto tiene en la carrera?</h2>
+            <p class="textop"> El impacto en la carrera de Desarrollo y Gestión de Software es profundo, ya que este pensamiento 
+                lógico es la base para escribir código limpio, optimizar algoritmos y tomar decisiones críticas en el diseño de software.</p>
+            <h2 class="subtitulo">¿Cuál es su implementación?</h2>
+            <p class="textop">Su implementación se refleja en la capacidad de los desarrolladores para enfrentar desafíos de manera estructurada y eficiente,
+                 desde el desarrollo de aplicaciones hasta la gestión de proyectos tecnológicos.</p>
+       </div>
+       <div  id="funciones" class="contenido">
+        <h1>Información adicional</h1>
+        <h2>Funciones Matemáticas</h2>
+        <a href="titulo_carrera"><img src="animaciones/funciones.gif" class="imagen-lado-pensamiento"></a>
+        <h2 class="subtitulo">¿Qué es?</h2>
+        <p class="textop"> Son la esencia del pensamiento abstracto aplicado a la tecnología. En esta asignatura, aprenderás a modelar 
+            relaciones entre variables, desde simples hasta complejas, utilizando funciones que
+             describen desde el crecimiento exponencial hasta las ondas sinusoidales. </p>
+        <h2 class="subtitulo">¿Qué impacto tiene en la carrera?</h2>
+        <p class="textop">  En la carrera de Desarrollo y Gestión de Software, su impacto es fundamental, 
+            ya que estas funciones son la base para crear algoritmos de cálculo, simulaciones y procesamiento de datos.</p>
+        <h2 class="subtitulo">¿Cuál es su implementación?</h2>
+        <p class="textop">La implementación de funciones matemáticas se encuentra en diversas áreas, como el desarrollo de aplicaciones 
+            que requieren cálculos complejos, la optimización de recursos, y la creación de modelos predictivos en sistemas inteligentes.</p>
+   </div>
+
+   <div  id="calculo" class="contenido">
+    <h1>Información adicional</h1>
+    <h2>Calculo diferencial</h2>
+    <h2></h2>
+    <a href="titulo_carrera"><img src="animaciones/calculo.gif" class="imagen-lado-calculo"></a>
+    <h2 class="subtitulo">¿Qué es?</h2>
+    <p class="textop"> Es el estudio de cómo cambian las cosas. Aquí, aprenderás a entender y analizar las tasas de cambio y la pendiente de curvas a través de derivadas.</p>
+    <h2 class="subtitulo">¿Qué impacto tiene en la carrera?</h2>
+    <p class="textop"> En la carrera de Desarrollo y Gestión de Software, su impacto es vital para modelar y resolver problemas que requieren análisis detallados, como optimización y simulación de sistemas. </p>
+    <h2 class="subtitulo">¿Cuál es su implementación?</h2>
+    <p class="textop">Su implementación es amplia, desde la creación de gráficos dinámicos y modelos de predicción hasta la optimización de algoritmos, haciendo que el software sea más preciso y eficiente.</p>
+</div>
+    
+<div  id="probabilidad" class="contenido">
+    <h1>Información adicional</h1>
+    <h2>Probabilidad y Estadística</h2>
+    <h2></h2>
+    <a  href="titulo_carrera"><img src="animaciones/probabilidad.gif" class="imagen-lado-calculo"></a>
+    <h2 class="subtitulo">¿Qué es?</h2>
+    <p class="textop"> Es el campo de las matemáticas que te enseña a cuantificar la incertidumbre y analizar datos para tomar decisiones informadas.</p>
+    <h2 class="subtitulo">¿Qué impacto tiene en la carrera?</h2>
+    <p class="textop">En la carrera de Desarrollo y Gestión de Software, su impacto es crucial para el diseño de algoritmos que manejan 
+        grandes volúmenes de datos, así como para la toma de decisiones basada en el análisis de tendencias y patrones.  </p>
+    <h2 class="subtitulo">¿Cuál es su implementación?</h2>
+    <p class="textop">Su implementación se ve en áreas como el aprendizaje automático, análisis predictivo, simulación de escenarios,
+         y la evaluación del rendimiento de software, donde los datos y la incertidumbre son fundamentales.</p>
+</div>
+
+<div  id="fundametos_ti" class="contenido_azul">
+    <h1>Información adicional</h1>
+    <h2>Fundamentos de TI</h2>
+    <a href="#titulo_carrera"><img src="animaciones/fundamentos_ti.gif" class="imagen-lado-igual"></a>
+    <h2 class="subtitulo">¿Qué es?</h2>
+    <p class="textop"> Es la base sobre la que se construyen todas las tecnologías de la información. 
+        En esta asignatura, te sumerges en los conceptos
+         esenciales como hardware, software, redes y seguridad, que son los pilares de cualquier infraestructura tecnológica.  </p>
+    <h2 class="subtitulo">¿Qué impacto tiene en la carrera?</h2>
+    <p class="textop">En la carrera de Desarrollo y Gestión de Software, su impacto es profundo, ya que proporciona 
+        el conocimiento necesario para entender y diseñar sistemas informáticos eficientes y seguros.  </p>
+    <h2 class="subtitulo">¿Cuál es su implementación?</h2>
+    <p class="textop"> Su implementación se refleja en la capacidad de gestionar 
+        y optimizar recursos tecnológicos, desde servidores hasta aplicaciones, asegurando su correcto funcionamiento.</p>
+</div>
+<div  id="fredes" class="contenido_azul">
+    <h1>Información adicional</h1>
+    <h2>Fundamentos de Redes</h2>
+    <a href="#titulo_carrera"><img src="animaciones/fundametos_redes.gif" class="imagen-lado-igual"></a>>
+    <h2 class="subtitulo">¿Qué es?</h2>
+    <p class="textop">Es el campo de las matemáticas que te enseña a cuantificar la incertidumbre y
+         analizar datos para tomar decisiones informadas.</p>
+    <h2 class="subtitulo">¿Qué impacto tiene en la carrera?</h2>
+    <p class="textop">En la carrera de Desarrollo y Gestión de Software, su impacto es 
+        profundo, ya que proporciona el conocimiento necesario para entender y diseñar sistemas informáticos eficientes y seguros.</p>
+    <h2 class="subtitulo">¿Cuál es su implementación?</h2>
+    <p class="textop">Su implementación se refleja en la capacidad de gestionar y optimizar recursos tecnológicos, 
+        desde servidores hasta aplicaciones, asegurando su correcto funcionamiento.</p>
+</div>
+
+<div  id="metodologia_programacion" class="contenido_azul">
+    <h1>Información adicional</h1>
+    <h2>Metodología de la Programación</h2>
+    <a href="#titulo_carrera"><img src="animaciones/metodologia_programacion.gif" class="imagen-lado-igual"></a>
+    <h2 class="subtitulo">¿Qué es?</h2>
+    <p class="textop">Es la asignatura que te enseña a estructurar y abordar problemas de manera sistemática a través de la programación.</p>
+    <h2 class="subtitulo">¿Qué impacto tiene en la carrera?</h2>
+    <p class="textop">Aquí, aprendes técnicas y enfoques para desarrollar software eficiente, 
+        desde la planificación hasta la implementación y pruebas.</p>
+    <h2 class="subtitulo">¿Cuál es su implementación?</h2>
+    <p class="textop">En la carrera de Desarrollo y Gestión de Software, su impacto es crucial, ya 
+        que establece las bases para escribir código limpio, modular y escalable. Su implementación 
+        se refleja en la capacidad de diseñar algoritmos robustos y gestionar proyectos de software de manera efectiva y organizada.</p>
+</div>
+
+<div  id="modelado_software" class="contenido_azul">
+    <h1>Información adicional</h1>
+    <h2>Metodología y Modelado de Software</h2>
+    <a href="#titulo_carrera"><img src="animaciones/modelado_software.gif" class="imagen-lado-igual"></a>
+    <h2 class="subtitulo">¿Qué es?</h2>
+    <p class="textop">  Es la disciplina que se enfoca en el uso de métodos estructurados para el desarrollo de software, 
+        combinando la planificación, diseño y modelado de sistemas antes de su implementación. </p>
+    <h2 class="subtitulo">¿Qué impacto tiene en la carrera?</h2>
+    <p class="textop"> n la carrera de Desarrollo y Gestión de Software, su impacto es crucial,
+         ya que permite crear soluciones robustas y escalables, 
+        minimizando errores y optimizando recursos. </p>
+    <h2 class="subtitulo">¿Cuál es su implementación?</h2>
+    <p class="textop">Su implementación se ve en la creación de diagramas de flujo, modelos UML, y en la aplicación de metodologías 
+        ágiles o tradicionales para gestionar proyectos de software eficientemente.</p>
+</div>
+
+<div  id="interconexion" class="contenido_azul">
+    <h1>Información adicional</h1>
+    <h2>Interconexión de Redes</h2>
+   <a href="#titulo_carrera"> <img src="animaciones/interconexion.gif" class="imagen-lado-igual"></a>
+    <h2 class="subtitulo">¿Qué es?</h2>
+    <p class="textop"> Es la disciplina que estudia cómo se conectan diferentes redes para permitir la comunicación y 
+        el intercambio de datos entre ellas.  </p>
+    <h2 class="subtitulo">¿Qué impacto tiene en la carrera?</h2>
+    <p class="textop">  En la carrera de Desarrollo y Gestión de Software, su impacto es esencial, ya que permite a los desarrolladores diseñar sistemas 
+        que puedan comunicarse y operar en entornos distribuidos y globales. </p>
+    <h2 class="subtitulo">¿Cuál es su implementación?</h2>
+    <p class="textop">Su implementación se observa en la configuración de redes empresariales, el manejo de protocolos de comunicación,
+         y la integración de servicios en la nube, asegurando que distintas redes trabajen en conjunto de manera eficiente.</p>
+</div>
+<div  id="orientada_objetos" class="contenido">
+    <h1>Información adicional</h1>
+    <h2>Programación Orientada a Objetos (POO)</h2>
+    <a href="#titulo_carrera"><img src="animaciones/programacion_objetos.gif" class="imagen-lado-igual"></a>
+    <h2 class="subtitulo">¿Qué es?</h2>
+    <p class="textop">   Es un paradigma de programación que organiza el software en torno a
+         "objetos", que son representaciones de entidades del mundo real con atributos y comportamientos.</p>
+    <h2 class="subtitulo">¿Qué impacto tiene en la carrera?</h2>
+    <p class="textop"> En la carrera de Desarrollo y Gestión de Software, su impacto es fundamental,
+        ya que promueve la reutilización de código, la modularidad y la escalabilidad de aplicaciones complejas.</p>
+    <h2 class="subtitulo">¿Cuál es su implementación?</h2>
+    <p class="textop">Su implementación se ve en la creación de clases, herencia, encapsulación y polimorfismo, permitiendo 
+        a los desarrolladores construir sistemas más organizados y fáciles de mantener.</p>
+</div>   
+
+<div  id="diseño_digital" class="contenido_azul">
+    <h1>Información adicional</h1>
+    <h2>Introducción al Diseño Digital</h2>
+    <a href="#titulo_carrera"><img src="animaciones/diseño_digital.gif" class="imagen-lado-igual"></a>
+    <h2 class="subtitulo">¿Qué es?</h2>
+    <p class="textop">Es la puerta de entrada al mundo del diseño visual en entornos digitales,
+         donde aprendes a combinar creatividad y tecnología para crear interfaces y gráficos atractivos.   </p>
+    <h2 class="subtitulo">¿Qué impacto tiene en la carrera?</h2>
+    <p class="textop"> En la carrera de Desarrollo y Gestión de Software, su impacto es significativo, ya que permite a los 
+        desarrolladores entender los principios del diseño que mejoran la experiencia del usuario y la usabilidad de las aplicaciones. </p>
+    <h2 class="subtitulo">¿Cuál es su implementación?</h2>
+    <p class="textop">Su implementación se refleja en la creación de interfaces intuitivas, diseño de experiencias de usuario (UX), 
+        y prototipos visuales que hacen que el software sea atractivo y funcional.</p>
+</div>
+
+<div  id="base_datos" class="contenido_azul">
+                <h1>Información adicional</h1>
+                <h2>Base de Datos para Aplicaciones </h2>
+               <a href="#titulo_carrera"> <img src="animaciones/base_datos.gif" class="imagen-lado-igual"></a>
+                <h2 class="subtitulo">¿Qué es?</h2>
+                <p class="textop">  Es el corazón de cualquier sistema que almacena, organiza y gestiona grandes 
+                    volúmenes de información de manera eficiente.</p>
+                <h2 class="subtitulo">¿Qué impacto tiene en la carrera?</h2>
+                <p class="textop"> En la carrera de Desarrollo y Gestión de Software, su impacto es crucial, ya que permite diseñar 
+                    sistemas robustos y escalables que garantizan la integridad y accesibilidad de los datos.  </p>
+                <h2 class="subtitulo">¿Cuál es su implementación?</h2>
+                <p class="textop">Su implementación abarca desde la creación de esquemas y relaciones entre tablas hasta la optimización de consultas, 
+                    asegurando que las aplicaciones puedan manejar datos de manera efectiva y segura en entornos empresariales.</p>
+           </div>
+
+           <div  id="ingles_5" class="contenido_naranja">
+            <h1>Información adicional</h1>
+            <h2>Inglés V</h2>
+            <a href="#titulo_carrera"><img src="animaciones/ingles_5.gif" class="imagen-lado-igual"></a>
+            <h2 class="subtitulo">¿Qué es?</h2>
+            <p class="textop">   Es una asignatura avanzada enfocada en perfeccionar las habilidades de comunicación en inglés,
+                 tanto en contextos académicos como profesionales.</p>
+            <h2 class="subtitulo">¿Qué impacto tiene en la carrera?</h2>
+            <p class="textop"> En la carrera de Desarrollo y Gestión de Software, su impacto es significativo, 
+                ya que el inglés es el idioma predominante en 
+                la industria tecnológica, desde la documentación técnica hasta la colaboración en equipos internacionales</p>
+            <h2 class="subtitulo">¿Cuál es su implementación?</h2>
+            <p class="textop">Su implementación se refleja en la capacidad de leer y escribir documentación técnica, 
+                participar en conferencias y reuniones, 
+                y acceder a recursos globales que fortalecen el desarrollo profesional en el campo del software.</p>
+       </div>
+
+       <div  id="adm_tiempo" class="contenido_rosa">
+        <h1>Información adicional</h1>
+        <h2>Administración del Tiempo</h2>
+        <a href="#titulo_carrera"><img src="animaciones/adm_tiempo.gif" class="imagen-lado-igual"></a>
+        <h2 class="subtitulo">¿Qué es?</h2>
+        <p class="textop">  Es la disciplina que te enseña a gestionar eficientemente tus tareas y responsabilidades,
+             priorizando actividades y optimizando recursos para alcanzar tus objetivos sin estrés.  </p>
+        <h2 class="subtitulo">¿Qué impacto tiene en la carrera?</h2>
+        <p class="textop">. En la carrera de Desarrollo y Gestión de Software, su impacto es enorme, 
+            ya que los proyectos de software requieren una planificación cuidadosa y el cumplimiento de plazos estrictos.  </p>
+        <h2 class="subtitulo">¿Cuál es su implementación?</h2>
+        <p class="textop">Su implementación se ve en la capacidad de organizar sprints en metodologías ágiles, gestionar múltiples 
+            tareas simultáneamente y entregar proyectos de calidad dentro de los tiempos establecidos.</p>
+   </div>
+
+   <div  id="org_trabajo" class="contenido_rosa">
+    <h1>Información adicional</h1>
+    <h2>Organización del Trabajo</h2>
+    <a href="#titulo_carrera"><img src="animaciones/org_trabajo.gif" class="imagen-lado-igual"></a>
+    <h2 class="subtitulo">¿Qué es?</h2>
+    <p class="textop"> Es la asignatura que te enseña a estructurar y coordinar tareas de manera eficiente, 
+        optimizando recursos y tiempo para alcanzar los objetivos con éxito.  </p>
+    <h2 class="subtitulo">¿Qué impacto tiene en la carrera?</h2>
+    <p class="textop"> . En la carrera de Desarrollo y Gestión de Software, su impacto es vital, ya que permite gestionar proyectos complejos,
+         coordinando equipos y asegurando que cada parte del trabajo se integre de manera efectiva. </p>
+    <h2 class="subtitulo">¿Cuál es su implementación?</h2>
+    <p class="textop">Su implementación se refleja en la capacidad de planificar proyectos, distribuir responsabilidades, y asegurar que todos
+         los procesos se alineen para cumplir con las metas establecidas.</p>
+</div>
+
+<div  id="sociocultural_2" class="contenido_amarillo">
+    <h1>Información adicional</h1>
+    <h2>Foración Sociocultural II</h2>
+    <a href="#titulo_carrera"><img src="animaciones/sociocultural_2.gif" class="imagen-lado-igual"></a>
+    <h2 class="subtitulo">¿Qué es?</h2>
+    <p class="textop"> Es una asignatura que profundiza en la comprensión de las dinámicas sociales y culturales,
+         fomentando una visión crítica y reflexiva sobre el entorno. </p>
+    <h2 class="subtitulo">¿Qué impacto tiene en la carrera?</h2>
+    <p class="textop">En la carrera de Desarrollo y Gestión de Software, su impacto es significativo, ya que promueve habilidades blandas esenciales 
+        como la empatía, la comunicación efectiva y la responsabilidad social.  </p>
+    <h2 class="subtitulo">¿Cuál es su implementación?</h2>
+    <p class="textop">Su implementación se observa en la capacidad de trabajar en equipo, entender el impacto social del software,
+         y desarrollar soluciones tecnológicas que sean inclusivas y responsables con la sociedad.</p>
+</div>
+
+<div  id="base_datos_1" class="contenido_azul   ">
+    <h1>Información adicional</h1>
+    <h2>Base de Datos</h2>
+    <a href="#titulo_carrera"><img src="animaciones/base-de-datos-1.gif" class="imagen-lado-igual"></a>
+    <h2 class="subtitulo">¿Qué es?</h2>
+    <p class="textop">Imagina un gran tesoro de información esperando ser organizado y explotado. 
+        Base de Datos es la materia que te convierte en 
+        un arquitecto de la información, enseñándote a construir sistemas que almacenan y gestionan datos
+         de forma inteligente y segura.</p>
+    <h2 class="subtitulo">¿Qué impacto tiene en la carrera?</h2>
+    <p class="textop"> En Desarrollo y Gestión de Software, ser el maestro 
+        de las bases de datos te da el poder de manejar grandes volúmenes de información y 
+        mantener todo en perfecto orden. Sin una buena base de datos, las aplicaciones serían como castillos de naipes.</p>
+    <h2 class="subtitulo">¿Cuál es su implementación?</h2>
+    <p class="textop">Lo verás en acción cuando diseñes estructuras de datos 
+        robustas, optimices consultas para que todo funcione como un rayo, y asegures que la información fluya sin problemas 
+        en cualquier sistema que crees. ¡Esencial para cualquier software que quiera triunfar!</p>
+</div>
+
+<div  id="sociocultural-1" class="contenido_amarillo">
+    <h1>Información adicional</h1>
+    <h2>Formación Sociocultural I</h2>
+    <a href="#titulo_carrera"><img src="animaciones/expresion_1.gif" class="imagen-lado-igual"></a>
+    <h2 class="subtitulo">¿Qué es?</h2>
+    <p class="textop">Es la asignatura que te introduce a la comprensión de los 
+        contextos sociales y culturales que influyen en la vida cotidiana y profesional. </p>
+    <h2 class="subtitulo">¿Qué impacto tiene en la carrera?</h2>
+    <p class="textop">En la carrera de Desarrollo y Gestión de Software, su impacto es importante porque ayuda a los estudiantes 
+        a desarrollar una conciencia crítica sobre cómo sus creaciones tecnológicas afectan a la sociedad.  </p>
+    <h2 class="subtitulo">¿Cuál es su implementación?</h2>
+    <p class="textop">Su implementación se refleja en la capacidad de integrar valores éticos y sociales en el desarrollo de software, asegurando que las 
+        soluciones tecnológicas sean inclusivas y beneficien al entorno social.</p>
+</div>
+
+<div  id="estandares" class="contenido_azul">
+    <h1>Información adicional</h1>
+    <h2>Estándares y Méricas para el Desarrollo de Software</h2>
+   <a href="#titulo_carrera"> <img src="animaciones/metricas.gif" class="imagen-lado-igual"></a>
+    <h2 class="subtitulo">¿Qué es?</h2>
+    <p class="textop">Estándares y Métricas es como la regla y el compás del mundo del software. Aquí aprendes a medir la calidad de tu 
+        código y a seguir las mejores prácticas para garantizar que tu software sea robusto, eficiente y fácil de mantener.</p>
+    <h2 class="subtitulo">¿Qué impacto tiene en la carrera?</h2>
+    <p class="textop">Aplicarás estos conocimientos cuando uses métricas para evaluar el rendimiento y la 
+        calidad de tu software, y sigas estándares que aseguran que tu código sea
+         consistente y escalable. ¡Es como tener una hoja de trucos para hacer que todo tu trabajo brille con excelencia!</p>
+    <h2 class="subtitulo">¿Cuál es su implementación?</h2>
+    <p class="textop">En Desarrollo y Gestión de Software, esta materia te convierte en
+        un perfeccionista del código, asegurando que todo lo que desarrolles no solo funcione, 
+       sino que lo haga a un nivel superior. Te enseña a crear software que cumple con los más altos estándares de la industria.</p>
+</div>
+
+<div  id="servicios" class="contenido_azul">
+    <h1>Información adicional</h1>
+    <h2>Aplicaiones Web Orientada a Servicios</h2>
+    <a href="#titulo_carrera"><img src="animaciones/aplicaciones_servicios.gif" class="imagen-lado-igual"></a>
+    <h2 class="subtitulo">¿Qué es?</h2>
+    <p class="textop">Es la materia que te introduce en el desarrollo de aplicaciones
+         web que se integran y comunican a través de servicios, como APIs y microservicios. Aquí, aprenderás a crear 
+        aplicaciones que no solo funcionan de manera aislada, sino que interactúan y colaboran con otros sistemas a través de la web.</p>
+    <h2 class="subtitulo">¿Qué impacto tiene en la carrera?</h2>
+    <p class="textop">En Desarrollo y Gestión de Software, esta materia es vital porque te prepara para construir
+         aplicaciones modernas y escalables que puedan adaptarse a entornos empresariales y a la nube. </p>
+    <h2 class="subtitulo">¿Cuál es su implementación?</h2>
+    <p class="textop">Verás su aplicación en la creación de APIs RESTful, la implementación de microservicios, 
+        y en la integración de aplicaciones con servicios externos, permitiendo que tu software sea 
+        flexible y capaz de interactuar con otros sistemas en tiempo real. ¡Es la clave para construir 
+        software que conecta el mundo digital!</p>
+</div>
+
+<div  id="arquitectura" class="contenido_azul">
+    <h1>Información adicional</h1>
+    <h2>Arquitectura de Software</h2>
+    <a href="#titulo_carrera"><img src="animaciones/arquitectura_software.gif" class="imagen-lado-igual"></a>
+    <h2 class="subtitulo">¿Qué es?</h2>
+    <p class="textop">Es la asignatura que te enseña a diseñar la estructura
+         fundamental de un sistema de software, incluyendo sus componentes y la forma en que interactúan entre sí.
+         Aquí aprendes a tomar decisiones estratégicas que definen cómo se construirá y mantendrá un software robusto y escalable. </p>
+    <h2 class="subtitulo">¿Qué impacto tiene en la carrera?</h2>
+    <p class="textop"> En Desarrollo y Gestión de Software, su impacto es enorme porque te prepara para tomar
+         decisiones críticas que afectan la funcionalidad, escalabilidad y mantenibilidad de cualquier proyecto de software.</p>
+    <h2 class="subtitulo">¿Cuál es su implementación?</h2>
+    <p class="textop">Su implementación se ve en la creación de 
+        diagramas arquitectónicos, la selección de patrones de diseño adecuados,
+         y la toma de decisiones sobre tecnologías y estructuras que aseguren que el
+         software sea eficiente y fácil de mantener a largo plazo. ¡Es la columna vertebral de cualquier gran proyecto de software!</p>
+</div>
+
+<div  id="profesional" class="contenido_azul">
+    <h1>Información adicional</h1>
+    <h2>Desarrollo Web Profesionl</h2>
+    <a href="#titulo_carrera"><img src="animaciones/web_profesional.gif" class="imagen-lado-igual"></a>
+    <h2 class="subtitulo">¿Qué es?</h2>
+    <p class="textop"> Es la asignatura que te lleva a un nivel avanzado en la creación de sitios web, 
+        enfocándose en técnicas y herramientas profesionales para construir aplicaciones web modernas,
+         seguras y escalables. Aquí, aprenderás a manejar tanto el frontend como el backend con un enfoque
+          en estándares de la industria.</p>
+    <h2 class="subtitulo">¿Qué impacto tiene en la carrera?</h2>
+    <p class="textop">  En Desarrollo y Gestión de Software, esta materia es esencial porque te prepara
+         para desarrollar sitios web de alta calidad, capaces de satisfacer las demandas del mercado y los usuarios.</p>
+    <h2 class="subtitulo">¿Cuál es su implementación?</h2>
+    <p class="textop">Su implementación se refleja en la creación de aplicaciones 
+        web completas, utilizando frameworks modernos, optimización de rendimiento, y prácticas de seguridad para 
+        construir proyectos que puedan ser desplegados profesionalmente. ¡Es el trampolín para convertirte en un desarrollador
+         web de élite!</p>
+</div>
+
+<div  id="integral" class="contenido_azul">
+    <h1>Información adicional</h1>
+    <h2>Desarrollo Móvil Integral</h2>
+    <a href="#titulo_carrera"><img src="animaciones/movil_integral.gif" class="imagen-lado-igual"></a>
+    <h2 class="subtitulo">¿Qué es?</h2>
+    <p class="textop">Es la asignatura que te sumerge en el mundo del desarrollo de aplicaciones móviles,
+         enseñándote a crear soluciones completas que funcionen en distintas plataformas, 
+        como Android e iOS. Aquí, aprenderás a diseñar, desarrollar, y optimizar apps móviles con un enfoque integral.  </p>
+    <h2 class="subtitulo">¿Qué impacto tiene en la carrera?</h2>
+    <p class="textop">En Desarrollo y Gestión de Software, esta materia es fundamental porque te capacita para entrar en el
+         creciente mercado de aplicaciones móviles, ofreciendo habilidades altamente demandadas por empresas y emprendedores.</p>
+    <h2 class="subtitulo">¿Cuál es su implementación?</h2>
+    <p class="textop">Su implementación se refleja en la creación de aplicaciones móviles 
+        desde cero, utilizando frameworks y tecnologías como React Native o Flutter, 
+        asegurando que las apps sean funcionales, atractivas y listas para ser
+         lanzadas en tiendas de aplicaciones. ¡Es el paso hacia el futuro del desarrollo de software!</p>
+</div>
+
+<div  id="expresion_1" class="contenido_naranja">
+    <h1>Información adicional</h1>
+    <h2>Expresión Oral y Escrita I</h2>
+   <a href="#titulo_carrera"> <img src="animaciones/expresion_1.gif" class="imagen-lado-igual"></a>
+    <h2 class="subtitulo">¿Qué es?</h2>
+    <p class="textop">  Es la asignatura que te enseña a comunicarte de manera efectiva, tanto en forma hablada como escrita. Aquí,
+         desarrollas habilidades para expresarte con claridad, coherencia y persuasión, elementos clave en cualquier ámbito profesional. </p>
+    <h2 class="subtitulo">¿Qué impacto tiene en la carrera?</h2>
+    <p class="textop">  En Desarrollo y Gestión de Software, esta materia es esencial para transmitir ideas, 
+        documentar proyectos y colaborar eficazmente con equipos multidisciplinarios.</p>
+    <h2 class="subtitulo">¿Cuál es su implementación?</h2>
+    <p class="textop">Su implementación se ve en la redacción de documentos técnicos, presentaciones orales de proyectos, y la
+         comunicación clara con clientes y colegas, asegurando que tus ideas se entiendan y se valoren en cualquier contexto profesional.</p>
+</div>
+
+<div  id="ingles_2" class="contenido_naranja">
+    <h1>Información adicional</h1>
+    <h2>Inglés II</h2>
+    <a href="#titulo_carrera"><img src="animaciones/ingles_5.gif" class="imagen-lado-igual"></a>
+    <h2 class="subtitulo">¿Qué es?</h2>
+    <p class="textop">Es la continuación del aprendizaje del idioma inglés, 
+        enfocándose en mejorar la comprensión y comunicación 
+        en situaciones cotidianas y profesionales. Aquí, te familiarizas con
+         estructuras gramaticales más complejas y amplías tu vocabulario.</p>
+    <h2 class="subtitulo">¿Qué impacto tiene en la carrera?</h2>
+    <p class="textop">En Desarrollo y Gestión de Software, el dominio del inglés es 
+        fundamental para acceder a la documentación técnica, participar en comunidades 
+        globales y colaborar con equipos internacionales. </p>
+    <h2 class="subtitulo">¿Cuál es su implementación?</h2>
+    <p class="textop">Su implementación se refleja en la capacidad para leer y escribir en inglés en 
+        contextos técnicos, participar en reuniones globales, y utilizar recursos en inglés para resolver
+         problemas y mejorar habilidades.</p>
+</div>
+
+<div  id="ingles_6" class="contenido_naranja">
+    <h1>Información adicional</h1>
+    <h2>Inglés VI</h2>
+    <a href="#titulo_carrera"><img src="animaciones/ingles_6.gif" class="imagen-lado-igual"></a>
+    <h2 class="subtitulo">¿Qué es?</h2>
+    <p class="textop">   Es una asignatura avanzada de inglés que te ayuda a perfeccionar tus habilidades
+         en el idioma, enfocándose en la fluidez y precisión en la comunicación tanto oral como escrita 
+         en contextos profesionales.</p>
+    <h2 class="subtitulo">¿Qué impacto tiene en la carrera?</h2>
+    <p class="textop">En Desarrollo y Gestión de Software, el manejo avanzado del inglés te permite interactuar 
+        de manera efectiva en un entorno global, acceder a recursos especializados, 
+        y comunicarte con precisión en un lenguaje técnico.</p>
+    <h2 class="subtitulo">¿Cuál es su implementación?</h2>
+    <p class="textop">Su implementación se ve en la redacción de informes complejos, participación en conferencias internacionales,
+         y en la colaboración con equipos de diferentes partes del mundo, asegurando una comunicación clara y profesional.</p>
+</div>
+
+<div  id="rendimiento" class="contenido_rosa">
+    <h1>Información adicional</h1>
+    <h2>Dirección de Equipos de Alto Rendimiento</h2>
+    <a href="#titulo_carrera"><img src="animaciones/alto_rendimiento.gif" class="imagen-lado-igual"></a>
+    <h2 class="subtitulo">¿Qué es?</h2>
+    <p class="textop"> Es la asignatura que te enseña a liderar y gestionar equipos de trabajo,
+         enfocándose en la creación de entornos donde los miembros puedan 
+        alcanzar su máximo potencial. Aprendes a motivar, coordinar y dirigir equipos para 
+        que trabajen de manera eficiente y colaborativa. </p>
+    <h2 class="subtitulo">¿Qué impacto tiene en la carrera?</h2>
+    <p class="textop"> En Desarrollo y Gestión de Software, esta materia es vital para liderar 
+        proyectos complejos, asegurando que los equipos mantengan un alto nivel de desempeño y logren resultados excepcionales.</p>
+    <h2 class="subtitulo">¿Cuál es su implementación?</h2>
+    <p class="textop">Su implementación se refleja en la capacidad de formar y dirigir equipos de desarrollo, resolver conflictos,
+         establecer metas claras, y mantener la motivación alta para cumplir con los objetivos del proyecto de manera exitosa.</p>
+</div>
+
+<div  id="sociocultural_3" class="contenido_amarillo">
+    <h1>Información adicional</h1>
+    <h2>Formaación Sociocultural III</h2>
+    <a href="#titulo_carrera"><img src="animaciones/sociocultural_3.gif" class="imagen-lado-igual"></a>
+    <h2 class="subtitulo">¿Qué es?</h2>
+    <p class="textop">Es la asignatura que te profundiza en el análisis crítico
+         de los fenómenos sociales y culturales, ayudándote a comprender mejor tu entorno y tu 
+        papel en la sociedad. Te permite explorar temas como la ética, la responsabilidad social
+         y el impacto de la tecnología en la cultura. </p>
+    <h2 class="subtitulo">¿Qué impacto tiene en la carrera?</h2>
+    <p class="textop">En Desarrollo y Gestión de Software, esta materia es clave para desarrollar 
+        un enfoque ético en la creación de tecnologías, asegurando que tus proyectos tengan un impacto positivo en la sociedad. </p>
+    <h2 class="subtitulo">¿Cuál es su implementación?</h2>
+    <p class="textop">Su implementación se ve en la capacidad para integrar valores éticos
+         en el desarrollo de software, reflexionar sobre el impacto 
+        social de tus proyectos, y contribuir a la construcción de una sociedad más 
+        justa y equitativa a través de la tecnología.</p>
+</div>
+
+<!--De aquí comienzan las celdas de la columnna numero 444444444444444444444444444444-->
+<div  id="operativos" class="contenido_azul">
+    <h1>Información adicional</h1>
+    <h2>Sistemas Operativos</h2>
+    <a href="#titulo_carrera"><img src="animaciones/sistemas_operativos.gif" class="imagen-lado-igual"></a>
+    <h2 class="subtitulo">¿Qué es?</h2>
+    <p class="textop"> Es la asignatura que te enseña cómo funcionan los sistemas operativos,<br> 
+        el software fundamental que gestiona el hardware de una computadora
+         y<br> proporciona servicios esenciales a otros programas. Aprendes sobre procesos,<br> 
+         gestión de memoria, sistemas de archivos, y seguridad.</p>
+    <h2 class="subtitulo">¿Qué impacto tiene en la carrera?</h2>
+    <p class="textop">En Desarrollo y Gestión de Software, esta materia es esencial porque te da una comprensión
+         profunda de cómo interactúa el software con el hardware, lo que es crucial para optimizar el rendimiento y solucionar problemas.</p>
+    <h2 class="subtitulo">¿Cuál es su implementación?</h2>
+    <p class="textop">Su implementación se ve en el desarrollo de software 
+        que aprovecha eficientemente los recursos del sistema, en la optimización de aplicaciones,
+         y en la creación de soluciones que requieren un conocimiento detallado de cómo funcionan 
+         los sistemas operativos a nivel interno.</p>
+</div>
+
+<div  id="principios_iot" class="contenido_azul">
+    <h1>Información adicional</h1>
+    <h2>Principios para IoT</h2>
+    <a href="#titulo_carrera"><img src="animaciones/principios_iot.gif" class="imagen-lado-igual"></a>
+    <h2 class="subtitulo">¿Qué es?</h2>
+    <p class="textop">Es la asignatura que te introduce al mundo del Internet de las Cosas, donde los objetos cotidianos se conectan a la red para recopilar y compartir datos. Aprendes sobre sensores, conectividad, y cómo integrar dispositivos en sistemas inteligentes.  </p>
+    <h2 class="subtitulo">¿Qué impacto tiene en la carrera?</h2>
+    <p class="textop"> En Desarrollo y Gestión de Software, esta materia es crucial porque IoT está transformando industrias enteras, y te prepara para desarrollar software que interactúe con dispositivos inteligentes, creando soluciones innovadoras.</p>
+    <h2 class="subtitulo">¿Cuál es su implementación?</h2>
+    <p class="textop">Su implementación se ve en el desarrollo de aplicaciones que gestionan y analizan datos de dispositivos IoT, diseñando sistemas que automatizan procesos y mejoran la eficiencia en sectores como la salud, la manufactura, y el hogar inteligente. ¡Es el futuro conectado en tus manos!</p>
+</div>
+
+<div  id="evaluacion_software" class="contenido_azul">
+    <h1>Información adicional</h1>
+    <h2>Evaluación y Mejora para el Desarrollo de Software</h2>
+    <a href="#tiulo_carrera"><img src="animaciones/evaluacion_software.gif" class="imagen-lado-igual"></a>
+    <h2 class="subtitulo">¿Qué es?</h2>
+    <p class="textop"> Es la asignatura que te enseña a evaluar la calidad del software que desarrollas y a identificar áreas de mejora. Aquí, aprendes a aplicar técnicas y métricas para asegurar que el software cumpla con los requisitos y estándares de calidad.  </p>
+    <h2 class="subtitulo">¿Qué impacto tiene en la carrera?</h2>
+    <p class="textop">En Desarrollo y Gestión de Software, esta materia es fundamental porque garantiza que los proyectos no solo se completen, sino que también sean eficientes, seguros y escalables. </p>
+    <h2 class="subtitulo">¿Cuál es su implementación?</h2>
+    <p class="textop">Su implementación se ve en la realización de pruebas exhaustivas, análisis de rendimiento, y la optimización continua de software, asegurando que los productos finales sean robustos y cumplan con las expectativas del usuario.</p>
+</div>
+
+<div  id="i4.0" class="contenido_azul">
+    <h1>Información adicional</h1>
+    <h2>Aplicaciones Web para I4.0</h2>
+    <a href=#titulo_carrera><img src="animaciones/aplicaciones_14.0.gif" class="imagen-lado-igual" alt="Love"></a>
+    <ul>
+        <li class="subtitulo">¿Qué es?</li>
+    <p class="textop"> Es la asignatura que te prepara para desarrollar aplicaciones web optimizadas
+         para la última versión de la web, haciendo uso de las tecnologías más recientes y mejores prácticas de la 
+         industria. Aprendes a crear aplicaciones rápidas, seguras y escalables que cumplen con los estándares modernos. </p>
+    <li class="subtitulo">¿Qué impacto tiene en la carrera?</li>
+    <p class="textop"> En Desarrollo y Gestión de Software, esta materia es crucial porque 
+        te mantiene al día con las últimas tendencias y tecnologías, asegurando que tus habilidades 
+        sean relevantes en un entorno web en constante evolución.</p>
+    <li class="subtitulo">¿Cuál es su implementación?</li>
+    <p class="textop">Su implementación se refleja en la creación de aplicaciones
+         web que aprovechan las nuevas funcionalidades del estándar 14.0, optimizando el rendimiento, 
+         la seguridad y la experiencia del usuario, preparando tus desarrollos para el futuro de la web.</p>
+    </ul>
+</div>
+
+<div  id="e_usuario" class="contenido_azul">
+    <h1>Información adicional</h1>
+    <h2>Experiencia de Usuario</h2>
+    <a href="#titulo_carrera"><img src="animaciones/experiencia_usuario.gif" class="imagen-lado-igual"></a>
+    <ul class="">
+   <li> <h2 class="subtitulo">¿Qué es?</h2></li>
+    <p class="textop">Es la asignatura que te sumerge en el diseño y mejora de la interacción entre los usuarios y las aplicaciones o sistemas que desarrollas. Aprendes a crear interfaces intuitivas, accesibles y atractivas que ofrecen una experiencia fluida y satisfactoria.</p>
+    <li><h2 class="subtitulo">¿Qué impacto tiene en la carrera?</h2></li>
+    <p class="textop">  En Desarrollo y Gestión de Software, esta materia es vital porque una buena experiencia de usuario puede determinar el éxito o fracaso de un producto. Dominar UX te permite diseñar software que no solo funcione, sino que encante a los usuarios.</p>
+    <li><h2 class="subtitulo">¿Cuál es su implementación?</h2></li>
+    <p class="textop">Su implementación se refleja en la creación de interfaces que son fáciles de usar, pruebas de usabilidad para mejorar la experiencia, y en el análisis constante del feedback de usuarios para perfeccionar el software, asegurando que las aplicaciones sean agradables y eficientes.</p>
+</ul>
+</div>
+
+<div  id="seg_aplicaciones" class="contenido_azul">
+    <h1>Información adicional</h1>
+    <h2>Seguridad en el Desarrollo de Aplicaciones</h2>
+    <a href="#titulo_carrera"><img src="animaciones/seguridad_desarrollo_aplicaciones.gif" class="imagen-lado-igual"></a>
+    <ul>
+    <li><h2 class="subtitulo">¿Qué es?</h2></li>
+    <p class="textop">  Es la asignatura que te enseña a proteger el software desde su concepción, asegurando que las aplicaciones sean resistentes a ataques y vulnerabilidades. Aprendes sobre prácticas de codificación segura, autenticación, encriptación, y cómo detectar y mitigar amenazas.</p>
+    <li><h2 class="subtitulo">¿Qué impacto tiene en la carrera?</h2></li>
+    <p class="textop"> En Desarrollo y Gestión de Software, esta materia es esencial para crear aplicaciones confiables y seguras, protegiendo tanto los datos del usuario como la integridad del sistema.</p>
+    <li><h2 class="subtitulo">¿Cuál es su implementación?</h2></li>
+    <p class="textop">Su implementación se refleja en la integración de medidas de seguridad en todas las etapas del desarrollo, desde la escritura de código hasta el despliegue, asegurando que las aplicaciones cumplan con los estándares de seguridad más altos y mantengan la confianza del usuario.</p>
+    </ul>
+</div>
+
+<div  id="dis_inteligentes" class="contenido_azul">
+    <h1>Información adicional</h1>
+    <h2>Desarrollo para Dispositivos Inteligentes</h2>
+    <a href="#titulo_carrera"><img src="animaciones/dispositvos_inteligentes.gif" class="imagen-lado-igual"></a>
+    <ul>
+    <li class="subtitulo"><h2 class="subtitulo">¿Qué es?</h2></li>
+    <p class="textop">  Es la asignatura que te introduce al diseño y creación de aplicaciones para dispositivos inteligentes como smartphones, wearables, y dispositivos IoT. Aprendes a desarrollar software que interactúa de manera efectiva con sensores y otros componentes de hardware en estos dispositivos.</p>
+    <li class="subtitulo"><h2 class="subtitulo">¿Qué impacto tiene en la carrera?</h2></li>
+    <p class="textop"> En Desarrollo y Gestión de Software, esta materia es crucial porque te prepara para trabajar en un mercado en constante crecimiento, donde la integración de software en dispositivos inteligentes es cada vez más demandada.</p>
+    <li class="subtitulo"><h2 class="subtitulo">¿Cuál es su implementación?</h2></li>
+    <p class="textop">Su implementación se refleja en la creación de aplicaciones que optimizan el uso de recursos limitados de los dispositivos, asegurando una interacción fluida y eficiente, y explorando nuevas posibilidades en el desarrollo de tecnologías móviles y IoT.</p>
+    </ul>
+</div>
+
+<div  id="ingles_1" class="contenido_naranja">
+    <h1>Información adicional</h1>
+    <h2>Inglés I</h2>
+    <a href="#titulo_carrera"><img src="animaciones/ingles.gif" class="imagen-lado-igual"></a>
+    <ul>
+    <li class="subtitulo"><h2 class="subtitulo">¿Qué es?</h2></li>
+    <p class="textop"> Es la asignatura que sienta las bases del aprendizaje del idioma inglés, enfocándose en habilidades básicas de comunicación, vocabulario y gramática. Aquí, empiezas a familiarizarte con el idioma y desarrollas la capacidad de entender y expresarte en situaciones cotidianas. </p>
+    <li class="subtitulo"><h2 class="subtitulo">¿Qué impacto tiene en la carrera?</h2></li>
+    <p class="textop">En Desarrollo y Gestión de Software, esta materia es fundamental porque el inglés es el idioma dominante en la tecnología, desde la documentación técnica hasta la interacción con herramientas y comunidades globales. </p>
+    <li class="subtitulo"><h2 class="subtitulo">¿Cuál es su implementación?</h2></li>
+    <p class="textop">Su implementación se refleja en la capacidad de leer documentación, seguir tutoriales y comenzar a comunicarte en inglés, lo que te abre las puertas a recursos internacionales y te prepara para un entorno de trabajo globalizado.</p>
+    </ul>
+</div>
+
+<div  id="ingles_3" class="contenido_naranja">
+    <h1>Información adicional</h1>
+    <h2>Inglés III</h2>
+    <a href="#titulo_carrera"><img src="animaciones/ingles.gif" class="imagen-lado-igual"></a>
+    <ul>
+    <li class="subtitulo"><h2 class="subtitulo">¿Qué es?</h2></li>
+    <p class="textop"> Es la asignatura que te lleva a un nivel intermedio de dominio del inglés, fortaleciendo tus habilidades de comunicación en contextos más complejos. Aquí, amplías tu vocabulario y trabajas en la fluidez, mejorando tanto tu comprensión como tu capacidad para expresarte en inglés.</p>
+    <li class="subtitulo"><h2 class="subtitulo">¿Qué impacto tiene en la carrera?</h2></li>
+    <p class="textop"> En Desarrollo y Gestión de Software, esta materia es crucial porque te prepara para manejar documentación técnica, participar en discusiones y colaborar con equipos internacionales en un entorno cada vez más globalizado. </p>
+    <li class="subtitulo"><h2 class="subtitulo">¿Cuál es su implementación?</h2></li>
+    <p class="textop">Su implementación se refleja en la habilidad para comprender manuales y guías en inglés, interactuar con recursos en línea, y comunicarte con colegas y clientes de manera efectiva, consolidando tu competencia lingüística en un contexto profesional.</p>
+    </ul>
+</div>
+
+<div  id="ingles_7" class="contenido_naranja">
+    <h1>Información adicional</h1>
+    <h2>Inglés VII</h2>
+    <a href="#titulo_carrera"><img src="animaciones/ingles.gif" class="imagen-lado-igual"></a>
+    <ul>
+    <li class="subtitulo"><h2 class="subtitulo">¿Qué es?</h2></li>
+    <p class="textop"> Es la asignatura que te lleva a un nivel avanzado de inglés, perfeccionando tus habilidades en comunicación técnica y profesional. Aquí, trabajas en la precisión, fluidez y la capacidad de discutir temas complejos en inglés, tanto en forma escrita como oral. </p>
+    <li class="subtitulo"><h2 class="subtitulo">¿Qué impacto tiene en la carrera?</h2></li>
+    <p class="textop">En Desarrollo y Gestión de Software, esta materia es fundamental para desempeñarte con éxito en un entorno global, facilitando la colaboración en proyectos internacionales y el acceso a recursos de vanguardia. </p>
+    <li class="subtitulo"><h2 class="subtitulo">¿Cuál es su implementación?</h2></li>
+    <p class="textop">Su implementación se ve en la capacidad de redactar informes detallados, presentar proyectos en inglés, y colaborar efectivamente con equipos y clientes de todo el mundo, asegurando un alto nivel de competencia profesional en un entorno globalizado.</p>
+    </ul>
+</div>
+
+<div  id="empresarial" class="contenido_rosa">
+    <h1>Información adicional</h1>
+    <h2>Negociación Empresarial</h2>
+    <a href="#titulo_carrera"><img src="animaciones/empresarial.gif" class="imagen-lado-igual"></a>
+    <ul>
+    <li class="subtitulo"><h2 class="subtitulo">¿Qué es?</h2></li>
+    <p class="textop">  Es la asignatura que te enseña las estrategias y técnicas para negociar de manera efectiva en el ámbito empresarial. Aprendes a crear acuerdos beneficiosos, resolver conflictos y manejar situaciones complejas en entornos de negocio.</p>
+    <li class="subtitulo"><h2 class="subtitulo">¿Qué impacto tiene en la carrera?</h2></li>
+    <p class="textop"> En Desarrollo y Gestión de Software, esta materia es crucial porque te prepara para negociar contratos, manejar relaciones con clientes y socios, y tomar decisiones que impacten positivamente en el éxito de los proyectos.</p>
+    <li class="subtitulo"><h2 class="subtitulo">¿Cuál es su implementación?</h2></li>
+    <p class="textop">Su implementación se refleja en la capacidad para cerrar acuerdos, liderar negociaciones de proyectos, y asegurar que los términos de trabajo sean claros y ventajosos para todas las partes involucradas.</p>
+    </ul>
+</div>
+
+<div  id="sociocultural_4" class="contenido_amarillo">
+    <h1>Información adicional</h1>
+    <h2>Formación Sociocultural IV</h2>
+    <a href="#titulo_carrera"><img src="animaciones/sociocultutal_4.gif" class="imagen-lado-igual"></a>
+    <ul>
+    <li class="subtitulo"><h2 class="subtitulo">¿Qué es?</h2></li>
+    <p class="textop"> Es la asignatura que te permite explorar temas avanzados sobre el impacto social y cultural de la tecnología, desarrollando una conciencia crítica y ética sobre cómo tus decisiones profesionales afectan a la sociedad y al medio ambiente. </p>
+    <li class="subtitulo"><h2 class="subtitulo">¿Qué impacto tiene en la carrera?</h2></li>
+    <p class="textop">En Desarrollo y Gestión de Software, esta materia es esencial para formar profesionales que no solo creen tecnología innovadora, sino que también se preocupen por su impacto social y ambiental, asegurando un desarrollo sostenible. </p>
+    <li class="subtitulo"><h2 class="subtitulo">¿Cuál es su implementación?</h2></li>
+    <p class="textop">Su implementación se refleja en la integración de principios éticos en el desarrollo de software, la participación en proyectos que beneficien a la comunidad, y la promoción de prácticas sostenibles dentro del ámbito tecnológico.</p>
+    </ul>
+</div>
+
+
+
+
+<!--De aquí comienza la quinta fila    5555555555555555555555555555555555-->
+
+<div  id="integradora_1" class="contenido_azul">
+    <h1>Información adicional</h1>
+    <h2>Inttegradora I</h2>
+    <a href="#titulo_carrera"><img src="animaciones/integradora_1.gif" class="imagen-lado-igual"></a>
+    <ul>
+    <li class="subtitulo"><h2 class="subtitulo">¿Qué es?</h2></li>
+    <p class="textop">  Integradora 1 es la asignatura que te desafía a aplicar los conocimientos adquiridos en diferentes materias para desarrollar un proyecto que integra múltiples áreas del desarrollo de software. Es una oportunidad para conectar teoría con práctica, trabajando en problemas reales.</p>
+    <li class="subtitulo"><h2 class="subtitulo">¿Qué impacto tiene en la carrera?</h2></li>
+    <p class="textop"> En Desarrollo y Gestión de Software, esta materia es esencial porque te prepara para enfrentar proyectos multidisciplinarios, desarrollando habilidades en gestión, programación y trabajo en equipo.</p>
+    <li class="subtitulo"><h2 class="subtitulo">¿Cuál es su implementación?</h2></li>
+    <p class="textop">Su implementación se ve en la creación de un proyecto integral que combina diferentes tecnologías y metodologías aprendidas, brindándote una experiencia cercana a lo que enfrentarás en el mundo laboral.</p>
+    </ul>
+</div>
+
+<div  id="d_aps" class="contenido_azul">
+    <h1>Información adicional</h1>
+    <h2>Diseño de Apps</h2>
+    <a href="#titulo_carrera"><img src="animaciones/diseño_aps.gif" class="imagen-lado-igual"></a>
+    <ul>
+    <li class="subtitulo"><h2 class="subtitulo">¿Qué es?</h2></li>
+    <p class="textop">  Es la asignatura que te enseña a conceptualizar y crear aplicaciones móviles y de escritorio con un enfoque en la experiencia del usuario (UX) y la interfaz de usuario (UI). Aprendes a diseñar apps que no solo sean funcionales, sino también atractivas y fáciles de usar.</p>
+    <li class="subtitulo"><h2 class="subtitulo">¿Qué impacto tiene en la carrera?</h2></li>
+    <p class="textop">En Desarrollo y Gestión de Software, esta materia es fundamental para crear aplicaciones que satisfagan las necesidades del usuario final, combinando estética con funcionalidad. </p>
+    <li class="subtitulo"><h2 class="subtitulo">¿Cuál es su implementación?</h2></li>
+    <p class="textop">Su implementación se refleja en el desarrollo de prototipos, wireframes, y diseños de interfaces que luego se convierten en aplicaciones reales, garantizando una experiencia de usuario fluida y eficiente.</p>
+    </ul>
+</div>
+
+<div  id="aps_iot" class="contenido_azul">
+    <h1>Información adicional</h1>
+    <h2>Aplicaciones de IoT</h2>
+    <a href="#titulo_carrera"><img src="animaciones/aplicaciones_iot.gif" class="imagen-lado-igual"></a>
+    <ul>
+    <li class="subtitulo"><h2 class="subtitulo">¿Qué es?</h2></li>
+    <p class="textop">  Es la asignatura que te introduce en el desarrollo de aplicaciones para el Internet de las Cosas (IoT), donde aprendes a conectar dispositivos y sistemas para que interactúen de manera inteligente. Aquí, te sumerges en la creación de soluciones que integran hardware y software para recopilar, analizar, y actuar sobre datos en tiempo real.</p>
+    <li class="subtitulo"><h2 class="subtitulo">¿Qué impacto tiene en la carrera?</h2></li>
+    <p class="textop">En Desarrollo y Gestión de Software, esta materia es clave porque IoT está revolucionando industrias, permitiéndote desarrollar aplicaciones que optimizan procesos y mejoran la calidad de vida.</p>
+    <li class="subtitulo"><h2 class="subtitulo">¿Cuál es su implementación?</h2></li>
+    <p class="textop">Su implementación se ve en la creación de aplicaciones que gestionan dispositivos conectados, como sensores, actuadores, y sistemas inteligentes, abriendo la puerta a innovaciones en sectores como el hogar inteligente, la salud, y la industria.</p>
+    </ul>
+</div>
+
+<div  id="bd_nube" class="contenido_azul">
+    <h1>Información adicional</h1>
+    <h2>Bases de Datos para Cómputo en la Nube</h2>
+    <a href="#titulo_carrera"><img src="animaciones/computo_nube.gif" class="imagen-lado-igual"></a>
+    <ul>
+    <li class="subtitulo"><h2 class="subtitulo">¿Qué es?</h2></li>
+    <p class="textop"> Es la asignatura que te enseña a diseñar, implementar y gestionar bases de datos que operan en entornos de computación en la nube. Aprendes a manejar servicios en la nube como AWS, Google Cloud, o Azure, optimizando el almacenamiento y acceso a datos a gran escala. </p>
+    <li class="subtitulo"><h2 class="subtitulo">¿Qué impacto tiene en la carrera?</h2></li>
+    <p class="textop">  En Desarrollo y Gestión de Software, esta materia es fundamental porque te prepara para trabajar con tecnologías de vanguardia que permiten manejar grandes volúmenes de datos de manera escalable y accesible desde cualquier lugar.</p>
+    <li class="subtitulo"><h2 class="subtitulo">¿Cuál es su implementación?</h2></li>
+    <p class="textop">Su implementación se refleja en la creación y gestión de bases de datos distribuidas en la nube, asegurando alta disponibilidad, escalabilidad, y seguridad de los datos, lo que es crucial para aplicaciones modernas que requieren un acceso rápido y eficiente a la información.</p>
+    </ul>
+</div>
+
+<div  id="seg_informatica" class="contenido_azul">
+    <h1>Información adicional</h1>
+    <h2>Seguridad Informática</h2>
+    <a href="#titulo_carrera"><img src="animaciones/seguridad_informatica.gif" class="imagen-lado-igual"></a>
+    <ul>
+    <li class="subtitulo"><h2 class="subtitulo">¿Qué es?</h2></li>
+    <p class="textop"> Es la asignatura que te enseña a proteger sistemas, redes y datos de amenazas y vulnerabilidades. Aprendes sobre ciberseguridad, criptografía, control de acceso, y técnicas para asegurar la integridad y confidencialidad de la información. </p>
+    <li class="subtitulo"><h2 class="subtitulo">¿Qué impacto tiene en la carrera?</h2></li>
+    <p class="textop"> En Desarrollo y Gestión de Software, esta materia es crucial para garantizar que los proyectos que desarrollas sean seguros, protegiendo tanto a los usuarios como a las empresas de posibles ataques.</p>
+    <li class="subtitulo"><h2 class="subtitulo">¿Cuál es su implementación?</h2></li>
+    <p class="textop">Su implementación se ve en la creación de sistemas con medidas de seguridad integradas, desarrollo de protocolos de seguridad, y gestión de incidentes para prevenir y mitigar amenazas cibernéticas.</p>
+    </ul>
+</div>
+
+<div  id="adm_proyectos" class="contenido_azul">
+    <h1>Información adicional</h1>
+    <h2>Administración de Proyectos TI</h2>
+    <a href="#titulo_carrera"><img src="animaciones/proyectos_ti.gif" class="imagen-lado-igual"></a>
+    <ul>
+    <li class="subtitulo"><h2 class="subtitulo">¿Qué es?</h2></li>
+    <p class="textop"> Es la asignatura que te enseña a planificar, organizar y dirigir proyectos de tecnología de la información (TI) desde su concepción hasta su finalización. Aprendes a gestionar recursos, tiempo, y equipos, asegurando que los proyectos se completen a tiempo y dentro del presupuesto. </p>
+    <li class="subtitulo"><h2 class="subtitulo">¿Qué impacto tiene en la carrera?</h2></li>
+    <p class="textop"> En Desarrollo y Gestión de Software, esta materia es esencial para liderar proyectos exitosos, garantizando que las soluciones tecnológicas se implementen de manera efectiva y eficiente.</p>
+    <li class="subtitulo"><h2 class="subtitulo">¿Cuál es su implementación?</h2></li>
+    <p class="textop">Su implementación se ve en la capacidad para elaborar cronogramas, gestionar riesgos, coordinar equipos multidisciplinarios y asegurarse de que los objetivos del proyecto se cumplan, desde el desarrollo hasta la entrega final.</p>
+    </ul>
+</div>
+
+<div  id="gestion_des_soft" class="contenido_azul">
+    <h1>Información adicional</h1>
+    <h2>Gestión del Proceso de Desarrollo de Software</h2>
+    <a href="#titulo_carrera"><img src="animaciones/procesos_desarrollo.gif" class="imagen-lado-igual"></a>
+    <ul>
+    <li class="subtitulo"><h2 class="subtitulo">¿Qué es?</h2></li>
+    <p class="textop"> Es la asignatura que te enseña a administrar y optimizar todo el ciclo de vida del desarrollo de software, desde la planificación inicial hasta la entrega del producto final. Aprendes a aplicar metodologías ágiles y tradicionales para gestionar los recursos, tiempo y calidad del software. </p>
+    <li class="subtitulo"><h2 class="subtitulo">¿Qué impacto tiene en la carrera?</h2></li>
+    <p class="textop">En Desarrollo y Gestión de Software, esta materia es fundamental para garantizar que los proyectos de software se completen de manera eficiente, cumpliendo con los estándares de calidad y las expectativas del cliente. </p>
+    <li class="subtitulo"><h2 class="subtitulo">¿Cuál es su implementación?</h2></li>
+    <p class="textop">Su implementación se refleja en la capacidad de organizar y coordinar equipos de desarrollo, monitorear el progreso del proyecto, y hacer ajustes en tiempo real para asegurar la entrega exitosa de un producto de software bien desarrollado.</p>
+    </ul>
+</div>
+
+<div  id="integradora_2" class="contenido_azul">
+    <h1>Información adicional</h1>
+    <h2>Integradora II</h2>
+    <a href="#titulo_carrera"><img src="animaciones/integradora_2.gif" class="imagen-lado-igual"></a>
+    <ul>
+    <li class="subtitulo"><h2 class="subtitulo">¿Qué es?</h2></li>
+    <p class="textop"> Integradora 2 es la asignatura que desafía a los estudiantes a consolidar y aplicar los conocimientos adquiridos a lo largo de sus estudios para desarrollar un proyecto integrador avanzado. Aquí, trabajas en equipo para resolver problemas complejos y crear soluciones innovadoras en un entorno realista. </p>
+    <li class="subtitulo"><h2 class="subtitulo">¿Qué impacto tiene en la carrera?</h2></li>
+    <p class="textop">En Desarrollo y Gestión de Software, esta materia es crucial porque simula el entorno profesional, brindando experiencia práctica en la planificación, desarrollo y presentación de proyectos tecnológicos completos. </p>
+    <li class="subtitulo"><h2 class="subtitulo">¿Cuál es su implementación?</h2></li>
+    <p class="textop">Su implementación se refleja en la creación de un proyecto integral que abarca múltiples áreas del desarrollo de software, desde la conceptualización hasta la ejecución, utilizando diversas tecnologías y metodologías aprendidas. ¡Es el momento de mostrar todo tu talento en acción!</p>
+    </ul>
+</div>
+
+<div  id="ingles_4" class="contenido_naranja">
+    <h1>Información adicional</h1>
+    <h2>Inglés IV</h2>
+    <a href="#titulo_carrera"><img src="animaciones/ingles.gif" class="imagen-lado-igual"></a>
+    <ul>
+    <li class="subtitulo"><h2 class="subtitulo">¿Qué es?</h2></li>
+    <p class="textop"> Inglés 4 es una asignatura que continúa desarrollando tus habilidades en el idioma inglés, enfocándose en la comprensión y producción de textos más complejos. Aquí, mejoras tu capacidad para comunicarte en situaciones académicas y profesionales más desafiantes. </p>
+    <li class="subtitulo"><h2 class="subtitulo">¿Qué impacto tiene en la carrera?</h2></li>
+    <p class="textop">  En Desarrollo y Gestión de Software, esta materia es importante porque te prepara para manejar documentación técnica avanzada, colaborar con equipos internacionales y acceder a una amplia gama de recursos en inglés.</p>
+    <li class="subtitulo"><h2 class="subtitulo">¿Cuál es su implementación?</h2></li>
+    <p class="textop">Su implementación se refleja en la capacidad para redactar informes detallados, participar en discusiones técnicas y entender documentación compleja, fortaleciendo tu perfil profesional en un entorno global.</p>
+    </ul>
+</div>
+
+<div  id="ingles_8" class="contenido_naranja">
+    <h1>Información adicional</h1>
+    <h2>Inglés VIII</h2>
+    <a href="#titulo_carrera"><img src="animaciones/ingles.gif" class="imagen-lado-igual"></a>
+    <ul>
+    <li class="subtitulo"><h2 class="subtitulo">¿Qué es?</h2></li>
+    <p class="textop">  Inglés 8 es la culminación del aprendizaje avanzado del idioma inglés, enfocándose en la perfección de la comunicación profesional y técnica. Aquí, dominas habilidades avanzadas en redacción, conversación y comprensión, preparándote para utilizar el inglés de manera efectiva en cualquier contexto global.</p>
+    <li class="subtitulo"><h2 class="subtitulo">¿Qué impacto tiene en la carrera?</h2></li>
+    <p class="textop"> En Desarrollo y Gestión de Software, esta materia es vital porque te capacita para participar en negociaciones internacionales, redactar documentación compleja, y colaborar en proyectos globales con fluidez y precisión.</p>
+    <li class="subtitulo"><h2 class="subtitulo">¿Cuál es su implementación?</h2></li>
+    <p class="textop">Su implementación se refleja en la capacidad de comunicarte con confianza en inglés en entornos profesionales exigentes, redactar informes detallados y participar activamente en discusiones técnicas, consolidando tu perfil como un profesional global.</p>
+    </ul>
+</div>
+
+<div  id="mate_inge1" class="contenido_verde">
+    <h1>Información adicional</h1>
+    <h2>Matemáticas para Ingeniería I</h2>
+    <a href="#titulo_carrera"><img src="animaciones/matematicas_1.gif" class="imagen-lado-igual"></a>
+    <ul>
+    <li class="subtitulo"><h2 class="subtitulo">¿Qué es?</h2></li>
+    <p class="textop"> Es la asignatura que establece los fundamentos matemáticos necesarios para abordar problemas de ingeniería. Aquí, te sumerges en el cálculo diferencial, álgebra lineal y otros conceptos matemáticos esenciales que forman la base para la resolución de problemas complejos en ingeniería.  </p>
+    <li class="subtitulo"><h2 class="subtitulo">¿Qué impacto tiene en la carrera?</h2></li>
+    <p class="textop"> En Desarrollo y Gestión de Software, esta materia es clave porque proporciona las herramientas matemáticas necesarias para el análisis y diseño de algoritmos, modelos de simulación, y otros sistemas complejos.</p>
+    <li class="subtitulo"><h2 class="subtitulo">¿Cuál es su implementación?</h2></li>
+    <p class="textop">Su implementación se refleja en la capacidad para aplicar cálculos precisos y modelos matemáticos en el desarrollo de software, optimización de procesos, y en la creación de soluciones tecnológicas que requieren un alto grado de precisión y análisis.</p>
+    </ul>
+</div>
+
+<div  id="videojuegos" class="contenido_gris">
+    <h1>Información adicional</h1>
+    <h2>Optativa: Creación de Videojuegos</h2>
+    <a href="#titulo_carrera"><img src="animaciones/videojuegos.gif" class="imagen-lado-igual"></a>
+    <ul>
+    <li class="subtitulo"><h2 class="subtitulo">¿Qué es?</h2></li>
+    <p class="textop">  Es la asignatura que te introduce en el emocionante mundo del desarrollo de videojuegos, enseñándote los principios del diseño, la programación y la creación de experiencias interactivas. Aquí, aprenderás a combinar creatividad con tecnología para dar vida a tus ideas en forma de juegos.</p>
+    <li class="subtitulo"><h2 class="subtitulo">¿Qué impacto tiene en la carrera?</h2></li>
+    <p class="textop"> En Desarrollo y Gestión de Software, esta materia es una puerta a la industria del entretenimiento digital, permitiéndote aplicar tus habilidades técnicas en un campo altamente innovador y en crecimiento.</p>
+    <li class="subtitulo"><h2 class="subtitulo">¿Cuál es su implementación?</h2></li>
+    <p class="textop">Su implementación se refleja en la creación de videojuegos desde la conceptualización hasta el desarrollo final, utilizando motores de juego como Unity o Unreal Engine, y aprendiendo a diseñar mecánicas de juego, gráficos y experiencias de usuario que capturen y entretengan. ¡Es donde la creatividad y la tecnología se fusionan para crear mundos nuevos!</p>
+    </ul>
+</div>
+
+
+
+<!--De aquí comienza la fila numero 6666666666666666666666666666666-->
+
+<div  id="ap_web" class="contenido_azul">
+    <h1>Información adicional</h1>
+    <h2>Aplicaciones Web</h2>
+    <a href="#titulo_carrera"><img src="animaciones/aplicaciones_web.gif" class="imagen-lado-igual"></a>
+    <ul>
+    <li class="subtitulo"><h2 class="subtitulo">¿Qué es?</h2></li>
+    <p class="textop">Es la asignatura que te enseña a desarrollar aplicaciones accesibles a través de navegadores web, utilizando tecnologías como HTML, CSS, JavaScript, y frameworks como React o Angular. Aprendes a construir interfaces interactivas y conectar el frontend con bases de datos y servidores.  </p>
+    <li class="subtitulo"><h2 class="subtitulo">¿Qué impacto tiene en la carrera?</h2></li>
+    <p class="textop">En Desarrollo y Gestión de Software, esta materia es esencial porque te capacita para crear soluciones digitales que pueden ser usadas en cualquier dispositivo con acceso a internet, ampliando el alcance de tus proyectos. </p>
+    <li class="subtitulo"><h2 class="subtitulo">¿Cuál es su implementación?</h2></li>
+    <p class="textop">Su implementación se ve en la creación de aplicaciones web completas, desde el diseño de la interfaz de usuario hasta la gestión de datos y la implementación de funcionalidades dinámicas, garantizando una experiencia fluida y atractiva para el usuario.</p>
+    </ul>
+</div>
+
+<div  id="datos_aplicados" class="contenido_azul">
+    <h1>Información adicional</h1>
+    <h2>Estructura de Datos Aplicada</h2>
+    <a href="#titulo_carrera"><img src="animaciones/datos_aplicada.gif" class="imagen-lado-igual"></a>
+    <ul>
+    <li class="subtitulo"><h2 class="subtitulo">¿Qué es?</h2></li>
+    <p class="textop"> Es la asignatura que te enseña a organizar y gestionar datos de manera eficiente, utilizando estructuras como listas, pilas, colas, árboles y grafos. Estas estructuras permiten el almacenamiento, acceso y manipulación de datos de forma óptima en diversas aplicaciones. </p>
+    <li class="subtitulo"><h2 class="subtitulo">¿Qué impacto tiene en la carrera?</h2></li>
+    <p class="textop"> En Desarrollo y Gestión de Software, esta materia es fundamental porque determina cómo se manejan los datos en un programa, afectando directamente el rendimiento y la eficiencia del software. </p>
+    <li class="subtitulo"><h2 class="subtitulo">¿Cuál es su implementación?</h2></li>
+    <p class="textop">Su implementación se refleja en la capacidad de elegir la estructura de datos adecuada para cada problema, optimizando el uso de recursos y asegurando que las operaciones de búsqueda, inserción y eliminación de datos se realicen de manera eficiente.</p>
+    </ul>
+</div>
+
+<div  id="movil_multi" class="contenido_azul">
+    <h1>Información adicional</h1>
+    <h2>Desarrollo móvil Multiplataforma</h2>
+    <a href="#titulo_carrera"><img src="animaciones/multiplataforma.gif" class="imagen-lado-igual"></a>
+    <ul>
+    <li class="subtitulo"><h2 class="subtitulo">¿Qué es?</h2></li>
+    <p class="textop"> Es la asignatura que te enseña a desarrollar aplicaciones móviles que funcionan en múltiples sistemas operativos, como Android e iOS, utilizando herramientas y frameworks como React Native, Flutter o Xamarin. Aprendes a escribir código que se puede reutilizar en diferentes plataformas, optimizando tiempo y recursos. </p>
+    <li class="subtitulo"><h2 class="subtitulo">¿Qué impacto tiene en la carrera?</h2></li>
+    <p class="textop"> En Desarrollo y Gestión de Software, esta materia es esencial porque te permite crear aplicaciones que lleguen a una audiencia más amplia, reduciendo costos y tiempo de desarrollo.</p>
+    <li class="subtitulo"><h2 class="subtitulo">¿Cuál es su implementación?</h2></li>
+    <p class="textop">Su implementación se ve en la creación de aplicaciones móviles que mantienen la misma funcionalidad y experiencia de usuario en diferentes plataformas, asegurando un desarrollo más eficiente y coherente en entornos variados.</p>
+    </ul>
+</div>
+
+<div  id="desarr_proyectos" class="contenido_azul">
+    <h1>Información adicional</h1>
+    <h2>Metodología para el Desarrollo de Proyectos</h2>
+    <a href="#titulo_carrera"><img src="animaciones/desarrollo_proyectos.gif" class="imagen-lado-igual"></a>
+    <ul>
+    <li class="subtitulo"><h2 class="subtitulo">¿Qué es?</h2></li>
+    <p class="textop"> Es la asignatura que te enseña las diversas metodologías y enfoques estructurados para planificar, ejecutar y controlar proyectos de software. Aquí aprendes a aplicar metodologías como Scrum, Kanban, o XP, ajustando el enfoque según las necesidades y objetivos del proyecto. </p>
+    <li class="subtitulo"><h2 class="subtitulo">¿Qué impacto tiene en la carrera?</h2></li>
+    <p class="textop">En Desarrollo y Gestión de Software, esta materia es crucial porque garantiza que los proyectos se completen a tiempo, dentro del presupuesto y con la calidad esperada, manejando de manera eficiente recursos y equipos. </p>
+    <li class="subtitulo"><h2 class="subtitulo">¿Cuál es su implementación?</h2></li>
+    <p class="textop"> Su implementación se ve en la gestión y ejecución de proyectos utilizando metodologías ágiles o tradicionales, asegurando un desarrollo organizado, eficiente y adaptable a cambios durante el ciclo de vida del proyecto.</p>
+    </ul>
+</div>
+
+<div  id="admin_tiempo" class="contenido_azul">
+    <h1>Información adicional</h1>
+    <h2>Adminisración de Base de Datos</h2>
+    <a href="#titulo_carrera"><img src="animaciones/administracion_bd.gif" class="imagen-lado-igual"></a>
+    <ul>
+    <li class="subtitulo"><h2 class="subtitulo">¿Qué es?</h2></li>
+    <p class="textop"> Es la asignatura que te enseña a gestionar y optimizar bases de datos para asegurar su correcto funcionamiento, seguridad, y eficiencia. Aprendes a realizar tareas como la administración de usuarios, la configuración de sistemas de respaldo, y la optimización de consultas. </p>
+    <li class="subtitulo"><h2 class="subtitulo">¿Qué impacto tiene en la carrera?</h2></li>
+    <p class="textop"> En Desarrollo y Gestión de Software, esta materia es fundamental porque asegura que los datos sean gestionados de manera efectiva, lo que es crucial para la integridad y el rendimiento de cualquier aplicación. </p>
+    <li class="subtitulo"><h2 class="subtitulo">¿Cuál es su implementación?</h2></li>
+    <p class="textop">Su implementación se refleja en la capacidad de administrar bases de datos, asegurar la disponibilidad y seguridad de los datos, y optimizar el rendimiento del sistema para manejar grandes volúmenes de información sin comprometer la eficiencia.</p>
+    </ul>
+</div>
+
+<div  id="extraccion_bd" class="contenido_azul">
+    <h1>Información adicional</h1>
+    <h2>Extracción de Conocimientos en Bases de Datos</h2>
+    <a href="#titulo_carrera"><img src="animaciones/extraccion.gif" class="imagen-lado-igual"></a>
+    <ul>
+    <li class="subtitulo"><h2 class="subtitulo">¿Qué es?</h2></li>
+    <p class="textop">   Es la asignatura que te enseña a descubrir patrones, tendencias y conocimientos valiosos a partir de grandes volúmenes de datos almacenados en bases de datos. Utilizas técnicas como minería de datos y análisis predictivo para transformar datos en información útil.</p>
+    <li class="subtitulo"><h2 class="subtitulo">¿Qué impacto tiene en la carrera?</h2></li>
+    <p class="textop"> En Desarrollo y Gestión de Software, esta materia es clave para desarrollar habilidades en análisis de datos, permitiéndote convertir datos crudos en decisiones informadas y estrategias efectivas. </p>
+    <li class="subtitulo"><h2 class="subtitulo">¿Cuál es su implementación?</h2></li>
+    <p class="textop">Su implementación se refleja en la capacidad para extraer, analizar y presentar datos de manera que apoyen la toma de decisiones empresariales, optimizando procesos y mejorando la competitividad en diversas industrias.</p>
+    </ul>
+</div>
+
+<div  id="progresivas" class="contenido_azul">
+    <h1>Información adicional</h1>
+    <h2>Aplicaciones Web Progresivas</h2>
+    <a href="#titulo_carrera"><img src="animaciones/progresivas.gif" class="imagen-lado-igual"></a>
+    <ul>
+    <li class="subtitulo"><h2 class="subtitulo">¿Qué es?</h2></li>
+    <p class="textop"> Es la asignatura que te enseña a desarrollar aplicaciones web que combinan lo mejor de las aplicaciones web tradicionales y las aplicaciones móviles nativas. Aprendes a crear aplicaciones rápidas, confiables y con capacidad de funcionar offline, utilizando tecnologías como Service Workers, Web App Manifest, y caché avanzado. </p>
+    <li class="subtitulo"><h2 class="subtitulo">¿Qué impacto tiene en la carrera?</h2></li>
+    <p class="textop">  En Desarrollo y Gestión de Software, esta materia es crucial porque permite crear aplicaciones accesibles desde cualquier dispositivo, mejorando la experiencia del usuario y aumentando el alcance de las soluciones.</p>
+    <li class="subtitulo"><h2 class="subtitulo">¿Cuál es su implementación?</h2></li>
+    <p class="textop"> Su implementación se refleja en la creación de aplicaciones web que funcionan de manera fluida incluso en condiciones de red inestables, ofreciendo una experiencia similar a la de las aplicaciones nativas, pero sin la necesidad de una instalación previa.</p>
+    </ul>
+</div>
+
+<div  id="movil_integral" class="contenido_azul">
+    <h1>Información adicional</h1>
+    <h2>Desarrollo Móvil Integral</h2>
+    <a href="#titulo_carrera"><img src="animaciones/integral_movil.gif" class="imagen-lado-igual"></a>
+    <ul>
+    <li class="subtitulo"><h2 class="subtitulo">¿Qué es?</h2></li>
+    <p class="textop"> Es la asignatura que te capacita para desarrollar aplicaciones móviles de manera integral, abarcando tanto el diseño de la interfaz de usuario como la programación y la integración con servicios en la nube. Aprendes a crear apps completas que funcionen eficientemente en distintas plataformas móviles. </p>
+    <li class="subtitulo"><h2 class="subtitulo">¿Qué impacto tiene en la carrera?</h2></li>
+    <p class="textop">  En Desarrollo y Gestión de Software, esta materia es esencial porque te prepara para enfrentar desafíos en el creciente mercado de aplicaciones móviles, con habilidades que abarcan todo el ciclo de vida de una app.</p>
+    <li class="subtitulo"><h2 class="subtitulo">¿Cuál es su implementación?</h2></li>
+    <p class="textop">Su implementación se refleja en la creación de aplicaciones móviles desde la fase de diseño hasta el despliegue, utilizando tecnologías modernas y garantizando una experiencia de usuario óptima y funcionalidad robusta en diversos entornos.</p>
+    </ul>
+</div>
+
+<div  id="expresion_2" class="contenido_naranja">
+    <h1>Información adicional</h1>
+    <h2>Expresión Oral y Escrita II</h2>
+    <a href="#titulo_carrera"><img src="animaciones/expresion_2.gif" class="imagen-lado-igual"></a>
+    <ul>
+    <li class="subtitulo"><h2 class="subtitulo">¿Qué es?</h2></li>
+    <p class="textop">  Es la asignatura que profundiza en las habilidades de comunicación, tanto oral como escrita, perfeccionando la capacidad de argumentar, presentar ideas y redactar textos más complejos y estructurados. Aquí, mejoras tu capacidad para comunicarte de manera efectiva en contextos académicos y profesionales.</p>
+    <li class="subtitulo"><h2 class="subtitulo">¿Qué impacto tiene en la carrera?</h2></li>
+    <p class="textop"> En Desarrollo y Gestión de Software, esta materia es fundamental para la creación de documentación clara, la presentación de proyectos, y la comunicación efectiva con equipos y clientes. </p>
+    <li class="subtitulo"><h2 class="subtitulo">¿Cuál es su implementación?</h2></li>
+    <p class="textop">Su implementación se ve en la redacción de informes técnicos, elaboración de presentaciones, y la habilidad para expresar ideas complejas de manera clara y persuasiva, tanto de forma escrita como verbal, fortaleciendo la comunicación en proyectos de software.</p>
+    </ul>
+</div>
+
+<div  id="ingles_9" class="contenido_naranja">
+    <h1>Información adicional</h1>
+    <h2>Inglés IX</h2>
+    <a href="#titulo_carrera"><img src="animaciones/ingles.gif" class="imagen-lado-igual"></a>
+    <ul>
+    <li class="subtitulo"><h2 class="subtitulo">¿Qué es?</h2></li>
+    <p class="textop">  Inglés IX es una asignatura avanzada que se enfoca en perfeccionar la competencia lingüística en inglés, especialmente en contextos técnicos y profesionales. Aquí, trabajas en habilidades avanzadas de escritura, comprensión auditiva, lectura crítica y expresión oral, preparándote para situaciones complejas y especializadas. </p>
+    <li class="subtitulo"><h2 class="subtitulo">¿Qué impacto tiene en la carrera?</h2></li>
+    <p class="textop"> En Desarrollo y Gestión de Software, esta materia es esencial para desenvolverte con soltura en entornos internacionales, redactar documentación técnica avanzada, y participar en conferencias y reuniones globales.</p>
+    <liclass="subtitulo"><h2 class="subtitulo">¿Cuál es su implementación?</h2></li>
+    <p class="textop"> Su implementación se refleja en la capacidad de redactar y presentar proyectos en inglés de manera profesional, comprender documentación técnica avanzada y participar activamente en discusiones técnicas con un nivel de inglés altamente competente.</p>
+    </ul>
+</div>
+
+<div  id="mate_inge2" class="contenido_verde">
+    <h1>Información adicional</h1>
+    <h2>Matemáticas para Ingeniería II</h2>
+    <a href="#titulo_carrera"><img src="animaciones/matematicas_2.gif" class="imagen-lado-igual"></a>
+    <ul>
+    <li class="subtitulo"><h2 class="subtitulo">¿Qué es?</h2></li>
+    <p class="textop">  Es la asignatura que continúa construyendo sobre los fundamentos matemáticos esenciales para la ingeniería, abarcando temas como el cálculo integral, series, y ecuaciones diferenciales. Estas herramientas matemáticas son vitales para resolver problemas complejos en ingeniería. </p>
+    <li class="subtitulo"><h2 class="subtitulo">¿Qué impacto tiene en la carrera?</h2></li>
+    <p class="textop">En Desarrollo y Gestión de Software, esta materia es crucial para desarrollar habilidades analíticas y de modelado, necesarias en áreas como la simulación de sistemas y el desarrollo de algoritmos avanzados. </p>
+    <li class="subtitulo"><h2 class="subtitulo">¿Cuál es su implementación?</h2></li>
+    <p class="textop">Su implementación se ve en la aplicación de técnicas matemáticas para optimizar procesos, desarrollar modelos predictivos, y mejorar la eficiencia de algoritmos, asegurando soluciones robustas y precisas en proyectos de software.</p>
+    </ul>
+</div>
+
+<div  id="estadias" class="contenido_estadia">
+    <h1>Información adicional</h1>
+    <h2>Estadía Profesional en el Sector Productivo</h2>
+    <a href="#titulo_carrera"><img src="animaciones/estadias.gif" class="imagen-lado-igual"></a>
+    <ul>
+    <li class="subtitulo"><h2 class="subtitulo">¿Qué es?</h2></li>
+    <p class="textop">Un pequeño paso para graduarte de Técnico superior.
+        Es la asignatura que te permite aplicar todo lo aprendido en un entorno real de trabajo, donde realizas prácticas profesionales en empresas o instituciones. Durante las estadías, desarrollas
+         un proyecto relevante que contribuye tanto a tu formación como a la organización en la que te integras.
+         </p>
+    <li class="subtitulo"><h2 class="subtitulo">¿Qué impacto tiene en la carrera?</h2></li>
+    <p class="textop">En Desarrollo y Gestión de Software, esta materia es fundamental para adquirir experiencia práctica, establecer contactos profesionales, y poner en acción los conocimientos teóricos en situaciones reales. </p>
+    <li class="subtitulo"><h2 class="subtitulo">¿Cuál es su implementación?</h2></li>
+    <p class="textop">Su implementación se ve en la participación activa en proyectos dentro de la empresa, aplicando tus habilidades en desarrollo de software, gestión de proyectos y solución de problemas en un entorno laboral, preparándote para tu futura carrera profesional.</p>
+    </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br>
+   </div>
+   <br>
+   </div>
+
+   
+
+
+
+
+
+
+
+
+   <script>
+    const text = "'Un click en la animación te llevará al principio sin complicación'";
+    const textContainer = document.getElementById('animated-text');
+    let i = localStorage.getItem('textIndex') ? parseInt(localStorage.getItem('textIndex')) : 0;
+
+    function typeEffect() {
+        if (i < text.length) {
+            textContainer.innerHTML += text.charAt(i);
+            i++;
+            localStorage.setItem('textIndex', i);
+            setTimeout(typeEffect, 100); // Controla la velocidad de aparición de cada letra
+        } else {
+            setTimeout(() => {
+                i = 0; // Reinicia el contador
+                localStorage.setItem('textIndex', i);
+                textContainer.innerHTML = ''; // Limpia el texto para empezar de nuevo
+                typeEffect(); // Inicia nuevamente el efecto
+            }, 2000); // Espera de 2 segundos antes de reiniciar
+        }
+    }
+
+    // Iniciar la animación
+    typeEffect();
+
+    // Limpiar el estado al salir de la página
+    window.addEventListener('beforeunload', () => {
+        localStorage.removeItem('textIndex');
+    });
+</script>
+
+
+
+
+<script>
+    window.onload = function(){
+        if (window.location.hash){
+            window.location.hash = '#titulog';
+        }
+    }
+</script>
+
+
+
+ 
+
+</body>
+</html>
